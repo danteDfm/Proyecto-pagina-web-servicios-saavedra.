@@ -1,0 +1,31 @@
+.modal{
+
+    border: 1px red solid;
+    height: 100px;
+    display: none;
+    justify-content: center;
+
+   
+}
+.modal ul{
+
+    border: 1px red solid;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+ 
+   
+}
+.modal ul li{
+
+    border: 1px red solid;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+ 
+   
+}
