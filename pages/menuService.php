@@ -8,15 +8,15 @@
    </div>
 
 
-   <div class="contenedor_menu">
+    <div class="contenedor_menu">
 
-    <ul class="menu">
-      <li class="opcion_servicio">General</li>
-      <li class="opcion_servicio">Transporte</li>
-      <li class="opcion_servicio">Obras menores</li>
-    </ul>
+      <ul class="menu">
+        <li class="opcion_servicio">General</li>
+        <li class="opcion_servicio">Transporte</li>
+        <li class="opcion_servicio">Obras menores</li>
+      </ul>
 
-</div>
+   </div>
 
 
   <div class="contenedor_servicios">
@@ -25,8 +25,11 @@
       <div class="servicio ser1">
 
           <div class="cont_card card1">
-              <div class="img_card">
+              <div class="img_card"></div>
+              <div class="descript">
               
+                <h2 class="title_card">Desbroce y despeje de líneas</h2>
+                <a href="#" class="info_ser">mas info</a>  
               </div>
             </div>
 

@@ -5,25 +5,35 @@
     margin-top: 100px;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 1100px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   transition: 1s;
-  
-    
+    transition: 1s;
+    border: 1px #e5e5e5 solid;
+    border: 1px red solid;
+    background-size: cover;
+      
 }
 
 
 .services_title{
 
-   
+    
     margin: 30px;
     transform: translateY(-50px);
 }
 
+.title_ser{
+
+    color: black;
+    font-size: 3rem;
+}
+.descrip_ser{
+    font-size: 1rem;
+}
 .contenedor_menu{
 
 
@@ -32,7 +42,7 @@
     position: relative;
     transform: translateY(-30px);
     min-width: 390px;
-  
+ 
 
 }
 .menu{
@@ -43,11 +53,9 @@
     flex-direction: row;
     list-style: none;
     justify-content: center;
-   
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
-   
+    box-shadow: -10px -10px 30px #e5e5e5, 10px 10px 30px rgb(156, 145, 145);
 
-   
+    border-radius: 30px;
 }
 
 
@@ -59,7 +67,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    border-radius: 30px;
     transition: 1s;
 }
 .menu li:hover{
@@ -72,6 +80,7 @@
 .menu :hover{
 
     cursor: pointer;
+  
 }
 
 
@@ -81,6 +90,8 @@
     width: 80%;
     height: auto; 
     border-radius: 20px;
+    
+
 
 }
 
@@ -114,7 +125,7 @@
 
 .cont_card{
 
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px #5a5454;
+    position: relative;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -124,18 +135,17 @@
     width: 500px;
     height: 300px;
     margin: 5px;
-    transition: 1s;
+  
+    overflow: hidden;
 
-
-    
+  
 }
-
 
 
 .cont_card1{
 
  
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px #5a5454;
+
     border-radius: 10px;
  
     display: flex;
@@ -151,7 +161,7 @@
 .cont_card2{
 
  
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px #5a5454;
+
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -161,100 +171,85 @@
     width: 450px;
     height: 300px;
     margin: 4px;
-   
+  
 }
 
 
 
-.cont_card:hover  .img_card{
 
-    transform: scale(1.1);
-    
-
-}
-
-
-.img_card{
-
- 
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-
-    transition: 2s;
-   
-}
-
-
-.descripcion_card{
-
-    color: white;
-    background-color: #1a365d;  
-    width: 35%;
-    height: 100%;
-    z-index: -1;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    z-index: 10;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-
-.descripcion_card p{
-
-    font-size: 13px;
-    margin-top: 14px;
-   
-}   
-
-
-
-.title_ser{
-
-    color: rgba(0, 0, 0, 0.823);
-    font-weight: bold;
-    font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-.descrip_ser{
-
-    color: #1a365d;
-
-}
 
 
 .card1{
   
      
-       background-image: url("../img/61541493-vector-icono-de-la-cámara-roja-sobre-fondo-gris.jpg");
-       background-size: cover;
-        background-position: center;
-        
-   
+    background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.03.53.jpg");
+    background-size: cover;
+    background-position: center;
+    
 }
+
+.descript{
+
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5a5454b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    top: 100%;
+}
+
+.cont_card:hover .descript{
+
+    top: 0%;
+
+}
+
+.title_card{
+
+    color: #e5e5e5;
+    margin: 10px;
+}
+
+.info_ser{
+
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    text-decoration: dashed;
+    color: #e5e5e5;
+    box-shadow: 5px 5px 10px black;
+}
+
+.info_ser:hover{
+   
+    color: #ffffff;
+    background-color: #968888;
+}
+
+
 .card2{
 
-   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.55.39.jpg");
+   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.02.12\ \(2\).jpg");
    background-size: cover;
    background-position: center;
 }
 .card3{
 
-
-
-   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.59.50\ \(3\).jpg");
+   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.55.39.jpg");
    background-size: cover;
+   background-position: center;
 }
 
 
 .card4{
 
-   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.03.53.jpg");
+   background-image: url("../img/servicios/transporte\ de\ carga\ 1.JPG");
    background-size: cover;
     background-position: center;
 }   
