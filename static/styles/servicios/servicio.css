@@ -1,0 +1,111 @@
+
+*{
+    margin: 0%;padding: 0%; box-sizing: border-box;
+}
+.main{
+
+    position: relative;
+    border: 1px red solid;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.servicio{
+
+    padding: 10px;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 30px #a7a0a0, 10px 10px 30px rgba(132, 132, 142, 0.4);
+    
+  
+}
+
+.img_servicio{
+
+    background-image: url("../../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.03.53.jpg");
+    background-position: center;
+    background-size: cover;
+
+    width: 70%;
+    height: 100%;
+    
+   
+
+}
+.cont_des_servicio{
+
+    width: 30%;
+    height: 100%;
+
+    border: 1px #242424 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  
+}
+
+.titulo_servicio{
+
+
+    margin-bottom: 10px;
+
+}
+
+.descripcion_servicio{
+
+ 
+
+
+}
+
+
+.content_soli{
+    position:fixed;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    right: -3%;
+  
+    transition: 1s;
+
+}
+.content_soli a{
+
+    position: absolute;
+    text-decoration: dashed;
+    color: #242424;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+    display: flex;
+   align-items: center;
+}
+
+
+.content_soli:hover{
+   
+
+    transform: scale(1.1);
+    background-color:#1a365d ;
+    right: -2%;
+
+}
+
+.content_soli:hover a{
+    color: white;
+}

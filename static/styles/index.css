@@ -13,14 +13,20 @@ body{
     background-color: #e5e5e5;
     font-family: 'GFS Didot', serif;
     font-family: 'Montserrat', sans-serif;
+ 
 }
 
 .index_header{  
 
     width: 100%;
     height: 100vh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+ 
    
    
 }
@@ -29,7 +35,7 @@ body{
 
 
     position:fixed;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     height: 80px;
     display: flex;
@@ -37,27 +43,32 @@ body{
     justify-content:space-between;
     background-color: #e5e5e5;
     color: #242424;
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    box-shadow: -10px -10px 30px #FFFFFF, 5px 5px 30px rgba(133, 133, 143, 0.4);
     transition: 1s;
+
    
    
- 
 
 }
 .navbar_navigation{
 
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    width: 29rem;
-    
+    width: 30rem;
    
+    
+ 
     
 }
 
 .navbar_navigation li{
 
-  
+ 
    text-align: center;
+   width: 250px;
    margin: 2%;
    padding: 5px;
    text-decoration: dashed;
@@ -66,6 +77,9 @@ body{
    font-weight:bolder;
    display: flex;
    flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   color: white;
 }
 
 .navbar_navigation li:hover{
@@ -88,6 +102,7 @@ body{
     text-decoration: dashed;
     color: #242424;
 }
+
 
 
 
@@ -114,145 +129,150 @@ body{
 
 }
 
+.contenedor_slider{
 
-
-.semi_carrosel{
-
-    
-    border-radius: 50px;
-    width: 80%;
-    height: 700px;
-    position: relative;
-    transform: translateX(190px);
-    margin-top: 140px;
-    background-color: #e5e5e5;
-    color: #242424;
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-
-}
-
-.descripcion_carrosel{
-
-    z-index: 2;
-    transition: 1s;
-    width: 50%;
-    height: 100%;
-    font-family: 'GFS Didot', serif;
-    font-family: 'Montserrat', sans-serif;
-    color: #242424;
-    padding: 20px;
-    border-radius: 50px 0px 0px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:flex-start;
-    color: #242424;
  
-   
-   
-}
-.img_carrosel{
 
-
-    width: 50%;
+    transform: translateY(100px);
     position: relative;
+    width: 100%;
+    height: 80%;
     overflow: hidden;
+    
+}
+
+.carrusel{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ 
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+}
+.carrusel_content{
+
+    flex-shrink: 0;
+ 
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
-    border-radius: 0px 50px 50px 0px;
+    justify-content: space-around;
    
-}
-.img_carrosel img{
+    z-index: 5;
 
-    width: 760px;
-    height: 50%;
+   
+
+}
+
+.semi_carrosel{
+   
+   
+    border-radius: 50px;
+    width: 420px;
+    height: 90%;
+    color: #242424;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translate(150px, 5px);
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.car1{
+
+    background-image: url("../img/hombre\ en\ la\ torre.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.car2{
+
+    background-image: url("../img/hombre\ sacando\ foto.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.car3{
+
+    background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.55.39.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+  
+}
+
+
+.descripcion{
+
     
 
+    width: 50%;
+    font-family: 'GFS Didot', serif;
+    color: #242424;
+    padding: 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+   
+   
 }
 
 .car_title{
-    font-size: 45px;
+
+    
+    font-size: 2.3vw;
     font-weight: bold;
-    text-shadow: 1px 1px 10px rgb(135, 135, 135);
-    margin: 20px;
+    margin-bottom: 20px;
+    color: #242424;
 
 }
 
+.car_descripcion{
+    
+    
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.img_container{
 
-.img1, .img2, .img3{
-
-    width: 600px;
+    width: 50%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: cambioTexto 1s infinite alternate;
-    
-}   
-
-.img1{
-
-    background-image: url("../img/transporte\ de\ carga\ 1.JPG");
-    background-position: center;
-    
-}
-.img2{
-
-    background-image: url("../img/hombre\ en\ la\ torre.jpg");
-    background-position: center;
-}
-
-.img3{
-
+    border-radius: 0px 50px 50px 0px;
+ 
     background-image: url("../img/eso\ del\ sol.jpg");
-    background-position: center;   
-   
-}
-.img1::after, .img2::after, .img3::after{
-
-  color: white;
-  content: "";
-  width: 33.4%;
-  height: 100%;
-  position: absolute;
- background-color: #24242400;
-   transition: 1s;
+ 
 }
 
-.img1:hover::after{
-
-    content: "comprometidos";
-    background-color: #2424247a;   
-   
-}
-
-.img2:hover::after{
-
-    content: "comprometidos";
-    background-color: #2424249c; 
-  
-   
-}
-.img3:hover::after{
-
-    content: "comprometidos";
-    background-color: #2424247a;   
-    
-   
-}
 
 
 .punto{
 
-    animation: parpadeo 1s infinite;
+    animation:parpadeo 2s infinite linear;
 
 }
+@keyframes anime{
+
+    to{
+
+        background-position-x: 1000px;
+    }
+}
+
+
+
+
 
 
 @keyframes parpadeo {
@@ -269,3 +289,4 @@ body{
     
    
 }
+

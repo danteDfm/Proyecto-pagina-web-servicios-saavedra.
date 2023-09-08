@@ -1,0 +1,64 @@
+
+.contacts{
+
+    position: fixed;
+    width: 80px;
+    right: 20px;
+    left: 0%;
+    top: 40vh;
+    z-index: 10;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+   
+
+}
+
+
+.wa{
+
+    background-image: url("../img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png");
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+ 
+}
+
+
+
+.ig{
+
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/61541493-vector-icono-de-la-cámara-roja-sobre-fondo-gris.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gm{
+
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/Gmail.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.gm, .ig, .wa{
+
+    transition: 1s;
+    box-shadow: 2px 2px 20px #24242473;
+
+}
+.gm:hover, .ig:hover, .wa:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+
+    box-shadow: 5px 5px 30px #24242473;
+
+}
