@@ -9,6 +9,7 @@
       
 }
 
+
 body{
     background-color: #e5e5e5;
     font-family: 'GFS Didot', serif;
@@ -97,9 +98,16 @@ body{
 }
 
 .navbar_title{
+
+    border-radius: 1px red solid;
     transform: translateX(20px);
-   
-   
+    width: 100px;
+    height: 100%;
+   background-image: url("../img/logos.png");
+    background-repeat: no-repeat;
+   background-position: center;
+   background-size:contain;
+   border-radius: 100%;
 }
 
 .nabvar_link{

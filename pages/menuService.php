@@ -11,9 +11,9 @@
     <div class="contenedor_menu">
 
       <ul class="menu">
-        <li class="opcion_servicio">General</li>
-        <li class="opcion_servicio">Transporte</li>
-        <li class="opcion_servicio">Obras menores</li>
+        <li class="opcion_servicio1 opcion_servicio">General</li>
+        <li class="opcion_servicio2 opcion_servicio">Transporte</li>
+        <li class="opcion_servicio3 opcion_servicio">Obras menores</li>
       </ul>
 
    </div>
@@ -30,6 +30,8 @@
               
                 <h2 class="title_card">Desbroce y despeje de líneas</h2>
                 <a href="#" class="info_ser">mas info</a>  
+
+                
               </div>
             </div>
 
@@ -64,21 +66,21 @@
 
       <div class="servicio ser2">
 
-          <div class="cont_card1 card1">
+          <div class="cont_card1 card5">
               <div class="img_card">
               
               </div>
             </div>
 
 
-            <div class="cont_card1 card2">
+            <div class="cont_card1 card6">
               <div class="img_card">
               
               </div>
             </div>
 
 
-            <div class="cont_card1 card3">
+            <div class="cont_card1 card7">
               <div class="img_card">
                 
               </div>
@@ -87,23 +89,26 @@
       </div>
 
 
+
+
+
       <div class="servicio ser3">
 
-          <div class="cont_card2 card1">
+          <div class="cont_card2 card8">
               <div class="img_card">
               
               </div>
             </div>
 
 
-            <div class="cont_card2 card2">
+            <div class="cont_card2 card9">
               <div class="img_card">
               
               </div>
             </div>
 
 
-            <div class="cont_card2 card3">
+            <div class="cont_card2 card10">
               <div class="img_card">
                 
               </div>

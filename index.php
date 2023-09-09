@@ -5,7 +5,7 @@
 
 <header class="index_header" id="navb">
   <nav class="navbar">
-    <h1 class="navbar_title">Servicios</h1>
+    <div class="navbar_title"></div>
     <ul class="navbar_navigation">
       <li><a href="#navb" class="nabvar_link">Inicio</a></li>
       <li><a href="#quienes_somos" class="nabvar_link">Perfil</a></li>
@@ -41,7 +41,7 @@
               <div class="descripcion">
             
                   <h2 class="car_title"> Comprometidos con tu causa<span class="punto">.</span></h2>
-                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore voluptatum consequatur doloremque, consequuntur, quae, enim porro eveniet aspernatur dolorem eos tempore laudantium. Rerum maxime amet eius nam dolore?</p>
+                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore.</p>
                   <a href="#servicios" class="info">nuestros servicios</a>
               </div>
 
@@ -69,7 +69,7 @@
               <div class="descripcion">
             
                   <h2 class="car_title">SOCIEDAD DE <br> TRANSPORTES Y SERVICIOS SAAVEDRA LTDA<span class="punto">.</span></h2>
-                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore voluptatum consequatur doloremque, consequuntur, quae, enim porro eveniet aspernatur dolorem eos tempore laudantium. Rerum maxime amet eius nam dolore?</p>
+                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore.</p>
                   <a href="#quienes_somos" class="info">Mas informacion</a>
               </div>
 
@@ -112,6 +112,7 @@
       <form class="formulario_peticion" >
 
         <h2 class="title_foot">Envianos tu Peticion</h2>
+     
 
        <div class="content_input">
           <input type="text" placeholder="Nombre Completo">
