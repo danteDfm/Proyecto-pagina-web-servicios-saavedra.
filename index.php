@@ -4,29 +4,19 @@
 <?php require "./pages/head.php" ?>
 
 <header class="index_header" id="navb">
-  <nav class="navbar">
-    <div class="navbar_title"></div>
-    <ul class="navbar_navigation">
-      <li><a href="#navb" class="nabvar_link">Inicio</a></li>
-      <li><a href="#quienes_somos" class="nabvar_link">Perfil</a></li>
-      <li><a href="#servicios" class="nabvar_link">Servicios</a></li>
-      <li><a href="#contactos" class="nabvar_link">Contactos</a></li>
-    </ul>
-  </nav>
 
+  <?php require("./pages/navbar.php"); ?>
 
   <div class="contenedor_slider">
     
   
     <div class="carrusel">
   
-
         <div class="carrusel_content">
        
-
               <div class="descripcion">
             
-                  <h2 class="car_title">SOCIEDAD DE <br> TRANSPORTES Y SERVICIOS SAAVEDRA LTDA<span class="punto">.</span></h2>
+                  <h2 class="car_title">SOCIEDAD DE TRANSPORTES Y SERVICIOS SAAVEDRA LTDA<span class="punto">.</span></h2>
                   <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore.</p>
                   <a href="#quienes_somos" class="info">Mas informacion</a>
 
@@ -34,47 +24,7 @@
 
         </div>
 
-        <div class="carrusel_content">
-              
-          
-
-              <div class="descripcion">
-            
-                  <h2 class="car_title"> Comprometidos con tu causa<span class="punto">.</span></h2>
-                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore.</p>
-                  <a href="#servicios" class="info">nuestros servicios</a>
-              </div>
-
-        </div>
-
-        <div class="carrusel_content ">
-              
-          
-
-              <div class="descripcion">
-            
-                  <h2 class="car_title">Llevando nuestro espiritu hasta tus calles<span class="punto">.</span></h2>
-                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore voluptatum consequatur doloremque, consequuntur, quae, enim porro eveniet aspernatur dolorem eos tempore laudantium. Rerum maxime amet eius nam dolore?</p>
-                  <a href="#contactos" class="info">contactanos</a>
-              </div>
-
-        </div>
-
-
-
-        <div class="carrusel_content ">
-              
-          
-
-              <div class="descripcion">
-            
-                  <h2 class="car_title">SOCIEDAD DE <br> TRANSPORTES Y SERVICIOS SAAVEDRA LTDA<span class="punto">.</span></h2>
-                  <p class="car_descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus dolore.</p>
-                  <a href="#quienes_somos" class="info">Mas informacion</a>
-              </div>
-
-        </div>
-
+     
      </div>
   </div>
    
@@ -90,16 +40,8 @@
 
 
 
-<section id="quienes_somos" class="quienes_somos">
-  
-  <div class="perfil">
-
-    <div class="titulo_des"></div>
-  </div>
+<?php require("./pages/quienes_somos.php"); ?>
  
-</section>
-
-
 
 <?php require("./pages/menuService.php"); ?>
 
@@ -129,28 +71,7 @@
       </form>
 
 
-      <footer class="pie_pagina">
-        <ul>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-          
-        </ul>
-        <ul>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-        </ul>
-        <ul>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-        </ul>
-      </footer>
-
-
- 
-
+     <?php require("./pages/pie.php"); ?>
 
     
 
@@ -160,8 +81,9 @@
 
 
   <script src="./static/js/barra.navegacion.js"></script>
-  <script src="./static/js/carrusel.js"></script>
- 
+  <script src="./static/js/cambio_img.js"></script>
+
+ <script src="./static/js//servicios.jss"></script>
   <script src="./static/js/select.service.js"></script>
 </body>
 </html>

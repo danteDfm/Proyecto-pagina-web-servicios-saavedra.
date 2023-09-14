@@ -7,24 +7,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-     
+    background-color: #e5e5e5;
+   margin-top: 50px;
+   
  
 }
 
 .perfil{
+
     
-    border-radius: 100%;
-    width: 40rem;
-    height: 40rem;
-    border: 1px white solid;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+
+
+
+
+.descrip1{
+    grid-area: des1;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 
-   
+    height: 33.33%;
+
+    position: relative;
+    
 }
 
+.title{
+  
+
+    padding: 9px;
+    margin: 5px;
+  
+    
+}
+.descrip{
+    padding: 10px;
+    margin: 5px;
+   
+}
+.descrip2{
+    position: relative;
+    grid-area: des2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 33.33%;
+ 
+    background-image: url("../img/pexels-pixabay-159397.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.descrip3{
+
+    position: relative;
+    grid-area: des2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 33.33%;
+  align-items: center;
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

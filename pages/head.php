@@ -9,6 +9,7 @@
     <link href="./static/styles/quienes.css" rel="stylesheet" type="text/css">
     <link href="./static/styles/contacto.css" rel="stylesheet" type="text/css">
     <link href="./static/styles/redes.css" rel="stylesheet" type="text/css">
+    <link href="./static/styles/nav.css" rel="stylesheet" type="text/css">
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

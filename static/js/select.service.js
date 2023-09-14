@@ -2,7 +2,6 @@ let servicios = document.querySelectorAll(".servicio");
 let opcion = document.querySelectorAll(".opcion_servicio");
 
 
-console.log(servicios);
 
 
 

@@ -21,15 +21,16 @@
 
   <div class="contenedor_servicios">
 
-  
       <div class="servicio ser1">
 
           <div class="cont_card card1">
+
               <div class="img_card"></div>
+            
               <div class="descript">
               
                 <h2 class="title_card">Desbroce y despeje de líneas</h2>
-                <a href="#" class="info_ser">mas info</a>  
+                <a href="http://localhost/servicios/pages/servicios.php" class="info_ser">mas info</a>  
 
                 
               </div>
@@ -37,24 +38,40 @@
 
 
             <div class="cont_card card2">
-              <div class="img_card">
+              <div class="img_card"></div>
+              <div class="descript">
               
-              </div>
+              <h2 class="title_card">Lavado de aislacion y termografia</h2>
+              <a href="#" class="info_ser">mas info</a>  
+
+              
+            </div>
             </div>
 
 
             <div class="cont_card card3">
-              <div class="img_card">
-                
-              </div>
+              <div class="img_card"></div>
+
+              <div class="descript">
+              
+              <h2 class="title_card">Mantención industrial y limpieza</h2>
+              <a href="#" class="info_ser">mas info</a>  
+
+              
+            </div>
             </div>
 
           
             <div class="cont_card card4">
-              <div class="img_card">
-                
-                
-              </div>
+              <div class="img_card"></div>
+
+              <div class="descript">
+              
+              <h2 class="title_card">Lavado de plantas solares</h2>
+              <a href="#" class="info_ser">mas info</a>  
+
+              
+            </div>
             </div>
         
       </div>
@@ -81,6 +98,11 @@
 
 
             <div class="cont_card1 card7">
+              <div class="img_card">
+                
+              </div>
+            </div>
+            <div class="cont_card1 card7_1">
               <div class="img_card">
                 
               </div>

@@ -189,14 +189,6 @@
 
 
 
-.card1{
-  
-     
-    background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.03.53.jpg");
-    background-size: cover;
-    background-position: center;
-    
-}
 
 .descript{
 
@@ -243,11 +235,22 @@
 }
 
 
+
+
+.card1{
+  
+   
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
 .card2{
 
    background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.02.12\ \(2\).jpg");
    background-size: cover;
-   background-position: center;
+   background-position: top;
 }
 .card3{
 
@@ -259,16 +262,22 @@
 
 .card4{
 
-   background-image: url("../img/servicios/transporte\ de\ carga\ 1.JPG");
+   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.59.50\ \(3\).jpg");
    background-size: cover;
-    background-position: center;
+    background-position: top;
 }   
+
+
+
+
+
+
 
 
 
 .card5{
 
-   background-image: url("../img/servicios/transporte\ de\ agua\ industrial/transporteAgua.JPG");
+   background-image: url("../img/servicios/transporte\ de\ carga\ 1.JPG");
    background-size: cover;
     background-position: center;
 }   
@@ -278,12 +287,21 @@
    background-size: cover;
     background-position: center;
 }   
+
 .card7{
 
    background-image: url("../img/servicios/Transporte\ de\ aguas\ servidas\ y\ arriendo\ de\ baños\ quimicos/servidas.JPG");
    background-size: cover;
     background-position: center;
 }   
+.card7_1{
+
+    background-image: url("../img/servicios/transporte\ de\ agua\ industrial/transporteAgua.JPG");
+   background-size: cover;
+    background-position: center;
+}   
+
+
 
 .card8{
 
