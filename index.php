@@ -51,21 +51,21 @@
   
   <div class="foot_contact" id="contactos">
     
-      <form class="formulario_peticion" >
+      <form class="formulario_peticion">
 
-        <h2 class="title_foot">Envianos tu Peticion</h2>
+        <h2 class="title_foot" >Envianos tu Peticion</h2>
      
 
        <div class="content_input">
-          <input type="text" placeholder="Nombre Completo">
-          <input type="email" placeholder="email">
-          <input type="text" placeholder="Numero Telefonico">
+          <input type="text" placeholder="Nombre Completo" name="nombre" class="i1">
+          <input type="email" placeholder="email" name="email" class="i1">
+          <input type="text" placeholder="Numero Telefonico" name="telefono" class="i1">
        </div>
 
-        <textarea placeholder="peticion">
+        <textarea placeholder="peticion" name="peticion" class="t1">
         </textarea>
 
-        <button class="btn_contact">
+        <button class="btn_contact" type="submit">
           Enviar
         </button>
       </form>
@@ -82,8 +82,8 @@
 
   <script src="./static/js/barra.navegacion.js"></script>
   <script src="./static/js/cambio_img.js"></script>
-
- <script src="./static/js//servicios.jss"></script>
+  <script src="./static/js/form.email.js" type="module" src="tu-archivo.js"></script>
+ <script src="./static/js/servicios.js"></script>
   <script src="./static/js/select.service.js"></script>
 </body>
 </html>

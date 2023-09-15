@@ -27,7 +27,7 @@
     list-style: none;
     width: 30rem;
    
-  
+    
  
     
 }
@@ -67,7 +67,7 @@
     transform: translateX(20px);
     width: 100px;
     height: 100%;
-   background-image: url("../img/logos.png");
+   background-image: url("../img/logos-removebg-preview.png");
     background-repeat: no-repeat;
    background-position: center;
    background-size:contain;
@@ -76,7 +76,8 @@
 
 .nabvar_link{
     text-decoration: dashed;
-   color:white;
+   color:rgb(255, 255, 255);
+   text-shadow: 5px 5px 10px #000;
 }
 
 

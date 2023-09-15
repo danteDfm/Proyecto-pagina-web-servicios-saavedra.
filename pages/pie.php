@@ -1,12 +1,12 @@
 <footer class="pie_pagina">
         <ul>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
+          <li>Direccion: Salitrera Solferino # 1773</li>
+          <li>Comuna: Copiapó</li>
+          <li>Mail: Transportessaavedranorte@gmail.com</li>
           
         </ul>
         <ul>
-          <li>texto de prueba</li>
+          <li>Fono: 985538019</li>
           <li>texto de prueba</li>
           <li>texto de prueba</li>
         </ul>
