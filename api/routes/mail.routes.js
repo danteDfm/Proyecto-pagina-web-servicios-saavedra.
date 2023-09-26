@@ -1,6 +1,6 @@
-const express  = require("express");
+import express  from "express";
 const router = express.Router();
-const sendEmailController = require("../controllers/enviar.correo.controller");
+import { DataMailControiller } from "../controllers/enviar.correo.controller";
 
 router.post('/email', sendEmailController);
 module.exports = router;

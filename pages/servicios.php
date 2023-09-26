@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/styles/servicios/servicio.css" rel="stylesheet">
-    <link href="../static/styles/contacto.css" rel="stylesheet" type="text/css">
-    <link href="../static/styles/redes.css" rel="stylesheet" type="text/css">
+
  
     <title>Document</title>
 </head>
@@ -35,25 +34,28 @@
 
 
     <?php require("./social.php"); ?>
+
+    <div class="contacts">
+    <a href="https://w.app/DKNa4M" class="wa"></a> 
+    <a class="ig" href="https://www.instagram.com/dante_dnt569/"></a>
+    <a class="gm" href="https://www.linkedin.com/in/abtec-chile-ingenieria-spa-666041216/"></a>
+</div>
+
     
-                    
+        
     <div class="content_service">
-         <h1 class="titulo_servicio">Desbroce y despeje de lineas.</h1>
+        
+     
 
-         <div class="img_servicio" ></div>     
+            <h1 class="titulo_servicio">Desbroce y despeje de lineas.</h1>
+            <p class="descripcion_servicio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda natus reiciendis sed quis, beatae optio aperiam veritatis dolores cum dolor recusandae itaque ullam exercitationem repellat repudiandae, voluptatum odit, quo pariatur!
+                Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est.   </p>
+            <a href="" class="dir_ser">Contratar Servicio</a>
 
-        <div class="descripcion_servicio">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda natus reiciendis sed quis, beatae optio aperiam veritatis dolores cum dolor recusandae itaque ullam exercitationem repellat repudiandae, voluptatum odit, quo pariatur!
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est..
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est..
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est.
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est.
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est.
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est.
-            Animi, incidunt beatae atque cum quasi sapiente sit, nisi exercitationem facilis commodi quas! Aperiam quia pariatur adipisci est.
-         </div>
-
-    </div>
+    
+     
+    </div>  
 
 
 

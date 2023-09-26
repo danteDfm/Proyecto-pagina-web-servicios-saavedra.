@@ -9,21 +9,27 @@
 
 body{
 
-    background-image: url("../../img/pexels-los-muertos-crew-8853537.jpg");
+   background-color: aliceblue;
 }
 
 .content{
  
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
-    display: flex;
+    height: 100vh;
+
+    
     justify-content: center;
     overflow: hidden;   
-    
-    margin-top:50px ;
+    display: flex;
+    justify-content: center;
+   align-items: center;
 
+        flex-direction: row-reverse;
+
+     
+        background-image: linear-gradient(25deg, #3d3c4b, #435869, #457589, #4294ab)
+   
 }
 
 
@@ -31,73 +37,145 @@ body{
 
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 45%;
+    height: 65%;
   
-    
+    justify-content: center;
+    align-items: center;
+   
+    position: relative;
+
+
  
    
+    backface-visibility: hidden;
+   
+    transition: 1s;
+
+        overflow: hidden;
+
+   box-shadow: 1px 1px 5px #242424;
 }
 
-.header{
-    position: relative;
+.content_service::after{
+
+    content: "";
     width: 100%;
-    min-height: 10vh;
-
-   
-   
+    height: 100%;
+    position: absolute;
+    background-color: #242424;
+    bottom:  100%;
+    
+    background-image: url("../../img/servicios/desglose.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s;
+    
 }
+.content_service:hover::after{
+
+        bottom:  0%;
+        
+}
+
+
 
 
 
 
 .titulo_servicio{
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:600;
-    font-size: 40px;
-   margin-top: 20px;
-
-   
-    color: #242424;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:800;
+    font-size: 30px;
+  
+    padding: 20px;
+    color: rgb(255, 255, 255);
     margin-bottom: 30px;
+    
+    width: 100%;    
+   text-align: center;
+    letter-spacing: 1px;
 }
 
 .descripcion_servicio{
 
-    width: 100%;
+    text-align:center;
+    width: 60%;
     height: auto;
     display:flex;
-    font-size: 19px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 100;
     overflow: auto;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-
-    color: #242424da;
-
-
+  
+    color: rgb(236, 236, 236);
    
+    font-family: Arial, Helvetica, sans-serif;
+ 
+   padding: 20px;
+   letter-spacing: 1px;
 
 }
 
 .img_servicio{
 
-    width: 100%;
-    height: 350px;
-    border-radius: 4px;
+    width: 30%;
+    height: 70%;
+  
     background-image: url("../../img/servicios/desglose.jpg");
     background-size: cover;
     background-position: center;
-    margin-bottom: 70px;
+  
 
- 
+    transform: translate(0px, 30px);
+
+
+  
+    position: relative;
+}   
+
+
+.dir_ser{
+
+    
+    width: 130px;
+    height: 40px;
+    transform: translateY(50px);
+    background-color: #c5b313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: dashed;
+    color: rgb(243, 243, 243);
+    transition: 1s;
+    z-index: 2;
+}
+
+.dir_ser:hover{
+
+    
+   background-color: #242424;
+
 }
 
 
 
 
 
+.header{
+    position: absolute;
+    width: 100%;
+    min-height: 10vh;
+ 
+   background-color: #2424243f;
+   z-index: 10;
+  
 
+   
+}
 
 
 
@@ -109,7 +187,7 @@ body{
 .navbar{
 
 
-    position:relative;
+    
     z-index: 10;
     width: 100%;
     height: 80px;
@@ -117,7 +195,7 @@ body{
     align-items: center;
     justify-content:space-between;   
     transition: 1s;
-    box-shadow: 1px 0px 5px #242424 ;
+    box-shadow: 1px 0px 5px #24242400 ;
 
    
    
@@ -155,6 +233,7 @@ body{
    justify-content: center;
    
    transition: 1s;
+   color: white;
 }
 
 .navbar_navigation li:hover{
@@ -162,7 +241,7 @@ body{
  
    cursor: pointer;
    color: rgb(0, 0, 0);
-   box-shadow: 0px -1px 0px 0px #000 inset;
+   box-shadow: 0px -1px 0px 0px #ffffff inset;
    
   
 }
@@ -173,7 +252,7 @@ body{
     transform: translateX(20px);
     width: 100px;
     height: 100%;
-   background-image: url("../../img/LOGO.png");
+   background-image: url("../../img/logos-removebg-preview.png");
     background-repeat: no-repeat;
    background-position: center;
    background-size:contain;
@@ -182,34 +261,70 @@ body{
 
 .nabvar_link{
     text-decoration: dashed;
-    color: #242424;
+    color: #ffffff;
 }
 
 
+.contacts{
 
-
-@media(max-width:780px){
-
-    .navbar_title{
-
-        display: none;
-       
+    position: fixed;
+    width: 80px;
+    right: 20px;
+    left: 0%;
+    top: 44vh;
+    z-index: 10;
     
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 
-    .navbar_navigation{
+   
 
+}
+
+
+.wa{
+
+    background-image: url("../../img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png");
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
  
-        display: none;
-    
-       
-       
-        
-    }
-    
-    
-
 }
 
 
 
+.ig{
+
+    width: 40px;
+    height: 40px;
+    background-image: url("../../img/61541493-vector-icono-de-la-cámara-roja-sobre-fondo-gris.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gm{
+
+    width: 40px;
+    height: 40px;
+    background-image: url("../../img/logoLink.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+.gm, .ig, .wa{
+
+    transition: 1s;
+    box-shadow: 2px 2px 20px #24242473;
+
+}
+.gm:hover, .ig:hover, .wa:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+
+    box-shadow: 5px 5px 30px #24242473;
+
+}
