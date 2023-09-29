@@ -28,12 +28,12 @@ export class Services{
 
     }
 
-    async readService(area:string){
+    async readService(){
 
        try{
 
-        const query:string = "SELECT id_servicio, title_servicio, descript_servicio ,img_servicio, creacion, area_servicio FROM REGISTRO_SERVICIO WHERE area_servicio = ?";
-        const res=await this.objDatabase.prepareQuery(query, [area]);
+        const query:string = "SELECT id_servicio, title_servicio, descript_servicio ,img_servicio, creacion, area_servicio FROM REGISTRO_SERVICIO WHERE borrado = false";
+        const res=await this.objDatabase.prepareQuery(query);
         return res;
         
        }catch(err:any){

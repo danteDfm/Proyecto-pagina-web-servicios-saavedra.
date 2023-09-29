@@ -8,9 +8,9 @@ export class ServicioController{
 
         try{    
 
-            const area = req.params.area;
+         
             const objService = new Services();
-            const dataService = await objService.readService(area);
+            const dataService = await objService.readService();
             res.status(201).json({
 
                 ok:true, 
@@ -47,7 +47,6 @@ export class ServicioController{
         try{
                 
             const {titleService, desService, imgService, area,creacion} = req.body;
-            
             const objService = new Services(titleService, desService, imgService, area,creacion);
 
             await objService.insertService();
