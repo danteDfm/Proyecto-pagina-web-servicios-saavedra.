@@ -1,7 +1,4 @@
 .servicios{
-
-    
-  
     
     position: relative;
     width: 100%;
@@ -14,7 +11,8 @@
     transition: 1s;
     border: 1px #e5e5e5 solid;
     background-size: cover;
-      
+        margin-top: 50px;
+    
 }
 
 
@@ -30,6 +28,8 @@
     color: black;
     font-size: 3rem;
 }
+
+
 .descrip_ser{
     font-size: 1rem;
 }
@@ -40,9 +40,8 @@
     height: 50px;
     position: relative;
     transform: translateY(-30px);
-    min-width: 390px;
- 
-
+    min-width: 300px;
+   
 }
 .menu{
 
@@ -97,11 +96,12 @@
 
 .contenedor_servicios{
 
-    width: 80%;
-    height: auto; 
+    width: 90%;
+    height: auto;
     border-radius: 20px;
-    
-
+    justify-content: center;
+ 
+    align-items: center;
 
 }
 
@@ -115,8 +115,8 @@
    flex-wrap: wrap;        
    justify-content: center;
    gap: 5px 5px;
-
-  
+   
+ 
 }
 
 
@@ -155,9 +155,9 @@
 .cont_card1{
 
  
-
+    position: relative;
     border-radius: 10px;
- 
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -172,7 +172,7 @@
 .cont_card2{
 
  
-
+    position: relative;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -182,7 +182,7 @@
     width: 450px;
     height: 300px;
     margin: 4px;
-  
+    overflow: hidden;
 }
 
 
@@ -197,16 +197,27 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #5a5454ce;
+    background-color: #5a5454b7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: 1s;
     top: 100%;
+   
 }
 
 .cont_card:hover .descript{
+
+    top: 0%;
+
+}
+.cont_card1:hover .descript{
+
+    top: 0%;
+
+}
+.cont_card2:hover .descript{
 
     top: 0%;
 
@@ -216,6 +227,8 @@
 
     color: #e5e5e5;
     margin: 10px;
+    text-align:  center;
+    
 }
 
 .info_ser{
@@ -236,93 +249,102 @@
 }
 
 
-
-
 .card1{
   
-   
+  
     background-size: cover;
     background-position: center;
-    
+        border: 1px #242424 solid;
 }
-
 
 .card2{
-
-   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 21.02.12\ \(2\).jpg");
-   background-size: cover;
-   background-position: top;
+  
+  
+    background-size: cover;
+    background-position: center;
+        border: 1px #242424 solid;
 }
+
 .card3{
-
-   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.55.39.jpg");
-   background-size: cover;
-   background-position: center;
+  
+  
+    background-size: cover;
+    background-position: center;
+        border: 1px #242424 solid;
 }
 
 
-.card4{
 
-   background-image: url("../img/servicios/Imagen\ de\ WhatsApp\ 2023-08-27\ a\ las\ 20.59.50\ \(3\).jpg");
-   background-size: cover;
-    background-position: top;
-}   
+@media(max-width:929px){
 
 
+    .title_ser{
+
+        position: relative;
+        font-size: 1.7rem;
+        
+    }
+
+    .descrip_ser{
+        font-size: 0.5rem;
+    }
+
+    .descript{
+
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #5a545400;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        top: 0%;
+        color: #242424;
+        background-color: #5a545457;
+    }
+
+    .title_card{
+
+        color: #ffffff;
+        margin: 10px;
+        text-align:  center;
+        
+    }
+    
+    .info_ser{
+    
+        border-radius: 10px;
+        text-align: center;
+        width: 150px;
+        padding: 10px;
+        text-decoration: dashed;
+        color: #ffffff;
+        
+    }
+    
+
+    
+    .servicios{
+    
+        
+        margin-bottom: 40px;
+        
+        
+    }
+    
+    
+    
+}
+@media(max-width:445px){
 
 
+    .title_ser{
 
-
-
-
-
-.card5{
-
-   background-image: url("../img/servicios/transporte\ de\ carga\ 1.JPG");
-   background-size: cover;
-    background-position: center;
-}   
-.card6{
-
-   background-image: url("../img/servicios/transporte\ de\ agua\ potable/potable.JPG");
-   background-size: cover;
-    background-position: center;
-}   
-
-.card7{
-
-   background-image: url("../img/servicios/Transporte\ de\ aguas\ servidas\ y\ arriendo\ de\ baños\ quimicos/servidas.JPG");
-   background-size: cover;
-    background-position: center;
-}   
-.card7_1{
-
-    background-image: url("../img/servicios/transporte\ de\ agua\ industrial/transporteAgua.JPG");
-   background-size: cover;
-    background-position: center;
-}   
-
-
-
-.card8{
-
-   background-image: url("../img/servicios/1/obra1.jpg");
-   background-size: cover;
-   
-}   
-
-.card9{
-
-   background-image: url("../img/servicios/2/obra2.jpg");
-   background-size: cover;
-    background-position: center;
-}   
-
-.card10{
-
-   background-image: url("../img/servicios/3/obra3.jpg");
-   background-size: cover;
-    background-position: center;
-}   
-
-
+        position: relative;
+        font-size: 1rem;
+    }
+    
+}

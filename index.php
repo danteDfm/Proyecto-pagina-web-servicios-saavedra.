@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require "./pages/head.php" ?>
+<?php require "./components/head.php" ?>
 
 <header class="index_header" id="navb">
 
-  <?php require("./pages/navbar.php"); ?>
+  <?php require("./components/navbar.php"); ?>
 
   <div class="contenedor_slider">
     
-  
-    <div class="carrusel">
-  
-        <div class="carrusel_content">
+ 
        
               <div class="descripcion">
             
@@ -22,10 +19,7 @@
 
               </div>
 
-        </div>
-
      
-     </div>
   </div>
    
 
@@ -34,16 +28,16 @@
 
 
 
-<?php require "./pages/social.php"  ?>
+<?php require "./components/social.php"  ?>
 
 
 
 
 
-<?php require("./pages/quienes_somos.php"); ?>
+<?php require("./components/quienes_somos.php"); ?>
  
 
-<?php require("./pages/menuService.php"); ?>
+<?php require("./components/menuService.php"); ?>
 
 
 
@@ -71,7 +65,7 @@
       </form>
 
 
-     <?php require("./pages/pie.php"); ?>
+     <?php require("./components/pie.php"); ?>
 
     
 

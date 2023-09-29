@@ -3,16 +3,14 @@
 
 
     position:fixed;
-    z-index: 10;
-    width: 100%;
-    height: 80px;
+    z-index: 100;
+    width: 100vw;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content:space-between;
     color:white;
-   
     transition: 1s;
-
    
    
 
@@ -25,83 +23,218 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 30rem;
+    width: 35rem;
+    height: 100%;
+    position: relative;
    
-   
- 
     
 }
 
 .navbar_navigation li{
 
- 
    text-align: center;
-   width: 250px;
-   margin: 2%;
-   padding: 5px;
+   width: 25%;
+   height: 100%;
    text-decoration: dashed;
-   align-items: center;
-   font-size: 20px;
-   font-weight:bolder;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    color: white;
    transition: 1s;
-}
 
-.navbar_navigation li:hover{
-
- 
-   cursor: pointer;
-   color: rgb(0, 0, 0);
-   box-shadow: 0px -1px 0px 0px #000 inset;
-   
   
 }
 
+
+
+.nabvar_link{
+
+    text-decoration: dashed;
+   color:rgb(255, 255, 255);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    
+}
+.nabvar_link:hover{
+
+background-color: #066ba2;
+}
+
+.nav_i{
+
+    
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+ 
+}
+.las{   
+
+   
+    font-size: 26px;
+    width: auto;
+    height: 50%;
+    text-align: end;
+    margin: 5px;
+    line-height: 100vh; 
+    
+}
+
+
+
+.logo{
+    position: relative;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    
+}
+
+.logo p{
+
+    position: relative;
+    width: 60%;
+    height: 100%;
+ 
+    display: flex;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+
+    
+}
 .navbar_title{
 
    
-    transform: translateX(20px);
-    width: 100px;
+
+    width: 40%;
     height: 100%;
    background-image: url("../img/logos-removebg-preview.png");
     background-repeat: no-repeat;
    background-position: center;
    background-size:contain;
    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+   
 }
 
-.nabvar_link{
-    text-decoration: dashed;
-   color:rgb(255, 255, 255);
-
-}
 
 
+@media(max-width:850px){
 
+    
 
-@media(max-width:780px){
+    .navbar{
 
-    .navbar_title{
-
-        display: none;
-       
+        
+        flex-direction: column;
     
     }
 
     .navbar_navigation{
 
- 
-        display: none;
-    
-       
-       
+
+        width: 100%;
+        height: 70%;
+        position: relative;
         
+        
+    }
+    .nav_i{
+
+    
+  
+        font-size: 14px;
+     
+    }
+    .las{   
+
+   
+        font-size: 20px;
+    
+        
+    }
+    .logo{
+       
+        width:100%;
+        height: 30%;
+      
+    }
+
+
+    .logo p{
+
+       
+        width: 100%;
+        
+        background-color: #242424;
+        
+    }
+    .navbar_title{
+
+   
+
+    
+        display: none;
+       
     }
     
     
+}
+
+
+@media(max-width:482px){
+
+    .navbar{
+
+        width: 100vw;
+        position: fixed;
+    
+    }
+
+    .navbar_navigation{
+
+
+        width: 100%;
+        height: 70%;
+        position: relative;
+        
+        
+    }
+    .nav_i{
+
+    
+  
+        font-size: 12px;
+     
+    }
+    .las{   
+
+   
+        font-size: 13px;
+        
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(2px);
+    
+        
+    }
 
 }
