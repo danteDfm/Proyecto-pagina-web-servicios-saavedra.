@@ -5,3 +5,13 @@ let tipo = document.querySelector(".opc");
 let img = document.querySelector(".img");
 
 
+
+form.addEventListener("submit", (e)=>{
+
+    e.preventDefault();
+ 
+    const formData = new FormData(form);
+    console.log(formData);
+
+     
+});

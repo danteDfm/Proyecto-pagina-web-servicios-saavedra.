@@ -43,11 +43,13 @@ export class ServicioController{
     }
 
 
-    static async crearServicio(req:Request, res:Response){
+    static async crearServicio(req:any, res:Response){
         try{
-                
-            const {titleService, desService, imgService, area,creacion} = req.body;
-            const objService = new Services(titleService, desService, imgService, area,creacion);
+
+            const {titleService, desService, area,creacion} = req.body;
+            const imagen = req.filenameExtension;
+
+            const objService = new Services(titleService, desService, imagen, area,creacion);
 
             await objService.insertService();
 

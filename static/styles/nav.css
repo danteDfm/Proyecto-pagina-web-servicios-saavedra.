@@ -226,14 +226,13 @@ background-color: #066ba2;
     .las{   
 
    
-        font-size: 13px;
+        font-size: 14px;
         
-      
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateY(2px);
-    
+        transform: translateY(4px);
+        
         
     }
 

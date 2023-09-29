@@ -50,12 +50,12 @@
     height: 400px;
     display: flex;
     flex-direction: column;
-    
+        transform: translateY(-80px);
     align-items: center;
     margin-bottom: 50px;
   
     z-index: 10;
-
+    
    
 }
 
@@ -161,10 +161,11 @@
 
     .formulario_peticion{
   
-      
+       
         width: 270px;
-        height: 230px;
+        height: 300px;
         padding: 10px;
+        transform: translateY(-140px);
     }
 
     .formulario_peticion .content_input{

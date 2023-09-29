@@ -23,7 +23,7 @@
     <main class="main">
           <section class="servicio">
               
-              <form class="form_service">
+              <form class="form_service" enctype="multipart/form-data">
                   <h1>Ingresar Informacion Del Servicio</h1>
                 <div> 
 

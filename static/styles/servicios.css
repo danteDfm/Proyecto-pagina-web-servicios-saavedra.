@@ -11,8 +11,9 @@
     transition: 1s;
     border: 1px #e5e5e5 solid;
     background-size: cover;
-        margin-top: 50px;
-    
+  
+    margin-bottom: 60px;
+     
 }
 
 
@@ -96,13 +97,13 @@
 
 .contenedor_servicios{
 
-    width: 90%;
+    width: 70%;
     height: auto;
     border-radius: 20px;
     justify-content: center;
  
     align-items: center;
-
+   
 }
 
 .servicio{
