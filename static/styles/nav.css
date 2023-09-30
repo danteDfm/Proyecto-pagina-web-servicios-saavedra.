@@ -77,7 +77,7 @@ background-color: #066ba2;
     font-size: 16px;
     border: 1px rgba(255, 0, 0, 0) solid;
 }
-.las{   
+.icon_nav{   
 
    
     font-size: 26px;
@@ -93,7 +93,7 @@ background-color: #066ba2;
 
 .logo{
     position: relative;
-    width: 230px;
+    width: 350px;
     height: 100%;
     display: flex;
     
@@ -102,7 +102,7 @@ background-color: #066ba2;
 .logo p{
 
     position: relative;
-    width: 60%;
+    width: 75%;
     height: 100%;
  
     display: flex;
@@ -111,14 +111,14 @@ background-color: #066ba2;
     justify-content: center;
     align-items: center;
     font-family:'Times New Roman', Times, serif;
-
+    transform: translateX(-25px);
     
 }
 .navbar_title{
 
    
 
-    width: 40%;
+    width: 25%;
     height: 100%;
    background-image: url("../img/logos-removebg-preview.png");
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@ background-color: #066ba2;
         font-size: 14px;
      
     }
-    .las{   
+    .icon_nav{   
 
    
         font-size: 20px;
@@ -178,10 +178,9 @@ background-color: #066ba2;
 
 
     .logo p{
-
-       
+        transform: translateX(0px);
+        border: 1px red solid;
         width: 100%;
-        
         background-color: #242424;
         
     }
@@ -199,6 +198,13 @@ background-color: #066ba2;
 
 
 @media(max-width:482px){
+    .logo{
+       
+        width:100%;
+        height: 30%;
+        border: 1px red solid;
+    }
+
 
     .navbar{
 
@@ -226,7 +232,7 @@ background-color: #066ba2;
         font-size: 12px;
      
     }
-    .las{   
+    .icon_nav{   
 
    
         font-size: 14px;

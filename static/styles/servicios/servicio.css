@@ -8,6 +8,9 @@
 }
 
 body{
+   
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
 }
 
@@ -15,13 +18,13 @@ body{
  
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
     overflow: hidden;   
     display: flex;
     justify-content: center;
    align-items: center;
-   
+  
 }
 
 
@@ -54,13 +57,13 @@ body{
 
 .img_ser{
 
-   
+ 
     background-size: cover;
     background-position: center;
     position: relative;
     width: 550px;
     height: 350px;
-    box-shadow: 10px 10px 30px #242424;
+    box-shadow: 1px 1px 5px #242424;
     z-index: 3;
     border-radius: 0px 10px 10px 0px;
 }
@@ -74,8 +77,7 @@ body{
     font-size: 25px;
     padding: 20px;
     color: rgb(24, 24, 24);
-    margin-bottom: 10px;
-    
+   
     width: 100%;    
    text-align: center;
     letter-spacing: 1px;
@@ -89,7 +91,7 @@ body{
 
     text-align:center;
     width: 80%;
-    height: 250px;
+    height: 70%;
     display:flex;
     font-size: 17px;
     font-weight: 100;
@@ -112,10 +114,8 @@ body{
 
 .dir_ser{
 
-    
     width: 130px;
     height: 40px;
-    position: absolute;
     bottom: -10%;
     background-color:  #4a708f;
     display: flex;
@@ -141,8 +141,7 @@ body{
 
     .content{
 
-        
-        flex-direction: column;
+        flex-direction: column-reverse;
  
     }
     
@@ -155,9 +154,14 @@ body{
         padding: 30px;
         box-shadow: 0px 0px 0px black;
         border: 1px black solid;
-        border-radius: 0px;
+        
     }
-
+    .img_ser{
+        width: 100%;
+        border-radius: 0px;
+        height: 40%;
+        box-shadow: 0px 0px 0px black;
+    }
     
     .titulo_servicio{
 
@@ -180,28 +184,9 @@ body{
     
     }
     
-    .img_ser{
 
-        display: none;
-   
-    }
 
-    .dir_ser{
 
-    
-        width: 130px;
-        height: 40px;
-        position: absolute;
-        bottom: -10%;
-        background-color:  #4a708f;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: dashed;
-        color: rgb(243, 243, 243);
-        transition: 1s;
-        z-index: 100;
-    }
     
 }
 
@@ -221,18 +206,26 @@ body{
         border-radius: 0px;
     }
 
-    .dir_ser{
+    .content_service{
 
-        transform: translateY(-69px);
-        width: 120px;
-        height: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60%;
+        padding: 30px;
+        box-shadow: 0px 0px 0px black;
+        border: 1px black solid;
+       
     }
-    
-      
+    .img_ser{
+        width: 100%;
+        border-radius: 0px;
+        height: 40%;
+    }
+
     .titulo_servicio{
 
-        font-size: 17
-        px;
+        font-size: 17px;
         padding: 10px;
         margin: 0%;
     }
@@ -257,49 +250,37 @@ body{
 
     .dir_ser{
 
-        transform: translateY(-69px);
+       
         width: 100px;
         height: 30px;
         font-size: 10px;
     }
     
-
+    .titulo_servicio{
+        font-size: 12px;
+    }
+    .descripcion_servicio{
+        font-size: 9px;
+    }
 }
 
-
-
-
-.header{
-    position: relative;
-    width: 100%;
-    height: 10vh;
-   z-index: 10;
-   backdrop-filter: blur(19px) saturate(180%);
-   -webkit-backdrop-filter: blur(19px) saturate(180%);
-   border: 1px solid rgba(255, 255, 255, 0.125);
-   background-color: #0c1a22;
-
-   display: flex;
-   flex-direction: row;
-   
-}
 
 
 
 .navbar{
 
 
-    position:fixed;
+    position:relative;
     z-index: 100;
     width: 100vw;
-    height: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:space-between;
     color:white;
-    
- 
-   
+    transition: 1s;
+  
+   background-color: #0c1a22;
 
 }
 .navbar_navigation{
@@ -313,7 +294,7 @@ body{
     width: 35rem;
     height: 100%;
     position: relative;
- 
+  
     
 }
 
@@ -329,7 +310,7 @@ body{
    justify-content: center;
    color: white;
    transition: 1s;
-
+   
   
 }
 
@@ -345,7 +326,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-
+   
     
 }
 .nabvar_link:hover{
@@ -362,35 +343,34 @@ background-color: #066ba2;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-size: 16px;
- 
+    border: 1px rgba(255, 0, 0, 0) solid;
 }
-.las{   
+.icon_nav{   
 
    
-    font-size: 23px;
+    font-size: 26px;
     width: auto;
     height: 50%;
     text-align: end;
     margin: 5px;
     line-height: 100vh; 
-   
+    border: 1px rgba(255, 0, 0, 0) solid;
 }
 
 
 
 .logo{
     position: relative;
-    width: 230px;
+    width: 350px;
     height: 100%;
     display: flex;
-    
+        
 }
 
 .logo p{
 
     position: relative;
-    width: 60%;
+    width: 75%;
     height: 100%;
  
     display: flex;
@@ -399,25 +379,25 @@ background-color: #066ba2;
     justify-content: center;
     align-items: center;
     font-family:'Times New Roman', Times, serif;
-
+    transform: translateX(-25px);
     
 }
 .navbar_title{
 
+   
 
-    width: 200px;
-    height: 100px;
-    background-image: url("../static/img/logos-removebg-preview.png");
+    width: 25%;
+    height: 100%;
+   background-image: url("../../img/logos-removebg-preview.png");
     background-repeat: no-repeat;
    background-position: center;
-   background-size:cover;
+   background-size:contain;
    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    color: white;
-    background-color: aliceblue;
+ 
+  
    
 }
 
@@ -428,9 +408,9 @@ background-color: #066ba2;
     
 
     .navbar{
+
         
         flex-direction: column;
-
     
     }
 
@@ -450,7 +430,7 @@ background-color: #066ba2;
         font-size: 14px;
      
     }
-    .las{   
+    .icon_nav{   
 
    
         font-size: 20px;
@@ -466,10 +446,9 @@ background-color: #066ba2;
 
 
     .logo p{
-
-       
+        transform: translateX(0px);
+        font-size: 10px;
         width: 100%;
-        
         background-color: #242424;
         
     }
@@ -487,12 +466,19 @@ background-color: #066ba2;
 
 
 @media(max-width:482px){
+    .logo{
+       
+        width:100%;
+        height: 30%;
+        
+    }
+
 
     .navbar{
 
         width: 100vw;
         position: fixed;
-        
+    
     }
 
     .navbar_navigation{
@@ -504,6 +490,9 @@ background-color: #066ba2;
         
         
     }
+    .nabvar_link{
+        flex-direction: column;
+    }
     .nav_i{
 
     
@@ -511,34 +500,45 @@ background-color: #066ba2;
         font-size: 12px;
      
     }
-    .las{   
+    .icon_nav{   
 
    
-        font-size: 13px;
+        font-size: 14px;
         
-      
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(2px);
-    
+
+       
+        
         
     }
 
 }
+
+
 .pie_pagina{
-
-    position: relative;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    z-index: 10;
+    height: 15%;
     background-color: #0c1a22;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     color: white;
-
 }
+
+
+.pie_pagina ul{
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+}
+
+
 
 
 
@@ -549,12 +549,11 @@ background-color: #066ba2;
     right: 20px;
     left: 0%;
     top: 40vh;
-    z-index: 10;
+    z-index: 100;
     
     display: flex;
     flex-direction: column;
     gap: 1px;
-
    
 
 }
@@ -562,7 +561,7 @@ background-color: #066ba2;
 
 .wa{
 
-    background-image: url("../static/img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png");
+    background-image: url("../../img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png");
     background-size: cover;
     background-position: center;
     width: 40px;
@@ -576,7 +575,7 @@ background-color: #066ba2;
 
     width: 40px;
     height: 40px;
-    background-image: url("../static/img/61541493-vector-icono-de-la-cámara-roja-sobre-fondo-gris.jpg");
+    background-image: url("../../img/61541493-vector-icono-de-la-cámara-roja-sobre-fondo-gris.jpg");
     background-size: cover;
     background-position: center;
 
@@ -586,7 +585,7 @@ background-color: #066ba2;
 
     width: 40px;
     height: 40px;
-    background-image: url("../static/img/logoLink.avif");
+    background-image: url("../../img/logoLink.avif");
     background-size: cover;
     background-position: center;
 }

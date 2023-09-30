@@ -11,9 +11,10 @@
     <div class="contenedor_menu">
 
       <ul class="menu">
-        <li class="opcion_servicio1 opcion_servicio">General</li>
-        <li class="opcion_servicio2 opcion_servicio">Transporte</li>
-        <li class="opcion_servicio3 opcion_servicio">Obras</li>
+        <li class="opcion_servicio1 opcion_servicio"><i class="las la-home icon_menu"></i><span class="descrip_menu">General</span></li>
+        <li class="opcion_servicio2 opcion_servicio"><i class="las la-truck icon_menu" ></i><span class="descrip_menu">Transporte</span></li>
+        <li class="opcion_servicio3 opcion_servicio"><i class="las la-hard-hat icon_menu"></i><span class="descrip_menu">Obras</span></li>
+        <li class="opcion_servicio4 opcion_servicio"><i class="las la-save icon_menu"></i><span class="descrip_menu"><a href="../static/pdf/servicios.pdf" download="servicios.pdf" style="text-decoration: dashed; color:black;">Descargar</a></span></li>
       </ul>
 
    </div>

@@ -11,7 +11,6 @@
     transition: 1s;
     border: 1px #e5e5e5 solid;
     background-size: cover;
-  
     margin-bottom: 60px;
      
 }
@@ -37,11 +36,12 @@
 .contenedor_menu{
 
 
-    width: 30%;
+    width: 35%;
     height: 50px;
     position: relative;
     transform: translateY(-30px);
-    min-width: 300px;
+    min-width: 440px;
+  
    
 }
 .menu{
@@ -55,6 +55,7 @@
     box-shadow: -10px -10px 30px #e5e5e5, 10px 10px 30px rgb(156, 145, 145);
    
     border-radius: 30px;
+ 
 }
 
 
@@ -67,6 +68,7 @@
     align-items: center;
     text-align: center;
     transition: 1s;
+   
    
 }
 .menu li:hover{
@@ -81,12 +83,11 @@
     border-radius: 30px 0px 0px 30px;
 
 }
-.opcion_servicio3{
+.opcion_servicio4{
 
     border-radius: 0px 30px 30px 0px;
 
 }
-
 .menu :hover{
 
     cursor: pointer;
@@ -275,7 +276,10 @@
 }
 
 
+.icon_menu{
 
+    font-size: 23px;
+}
 @media(max-width:929px){
 
 
@@ -336,10 +340,14 @@
         
     }
     
-    
+  
     
 }
-@media(max-width:445px){
+
+
+
+
+@media(max-width:500px){
 
 
     .title_ser{
@@ -347,5 +355,37 @@
         position: relative;
         font-size: 1rem;
     }
+    .contenedor_menu{
+
+
+        min-width: 320px;
+      
+       
+    }
+    .icon_menu{
+        
+        font-size: 15px;
+    }
+    .descrip_menu{
+        font-size: 12px;
+    }
+
     
+}
+@media(max-width:350px){
+
+    .contenedor_menu{
+  
+        min-width: 250px;
+       
+    }
+
+    .icon_menu{
+        
+        font-size: 12px;
+        border: 1px rgba(255, 0, 0, 0) solid;
+    }
+    .descrip_menu{
+        font-size: 10px;
+    }
 }

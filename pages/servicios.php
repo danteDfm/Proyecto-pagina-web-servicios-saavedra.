@@ -12,31 +12,15 @@
 </head>
 
 
-    <div class="contacts">
-        <a href="https://w.app/DKNa4M" class="wa"></a> 
-        <a class="ig" href="https://www.instagram.com/dante_dnt569/"></a>
-        <a class="gm" href="https://www.linkedin.com/in/abtec-chile-ingenieria-spa-666041216/"></a>
-    </div>
-
+   
 <body>
 
    
 
 
-    <header class="header">
+<?php require("../components/navbar.php"); ?>
+    
 
-        <nav class="navbar">
-            
-
-            <ul class="navbar_navigation">
-            <li><a href="#navb" class="nabvar_link"> <i class="las la-home"></i><span class="nav_i">Inicio</span></a></li>
-            <li><a href="#quienes_somos" class="nabvar_link"><i class="las la-user"></i><span class="nav_i">Perfil</span></a></li>
-            <li><a href="#servicios" class="nabvar_link"><i class="las la-truck-pickup"></i> <span class="nav_i">Servicios</span></a></li>
-            <li><a href="#contactos" class="nabvar_link"><i class="las la-address-book"></i><span class="nav_i">Contactos</span></a></li>
-            </ul>
-        </nav>
-
-    </header>
 
     <main   class="content">
 
@@ -53,9 +37,9 @@
             
         
 
-            <h1 class="titulo_servicio">Desbroce y despeje de lineas.</h1>
+            <h1 class="titulo_servicio"></h1>
             <p class="descripcion_servicio">
-           
+            
             </p>
             <a href="" class="dir_ser">Contratar Servicio</a>
     </div>  
@@ -66,8 +50,20 @@
         
     </main>
 
-
-     <?php require("../components/pie.php"); ?>
+    <footer class="pie_pagina">
+        <ul>
+          <li>Direccion: Salitrera Solferino # 1773</li>
+          <li>Comuna: Copiapó</li>
+          <li>Mail: Transportessaavedranorte@gmail.com</li>
+          
+        </ul>
+        <ul>
+          <li>Fono: 985538019</li>
+          <li>texto de prueba</li>
+          <li>texto de prueba</li>
+        </ul>
+      
+</footer>
 
     
 
