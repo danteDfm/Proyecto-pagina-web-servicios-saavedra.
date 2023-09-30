@@ -32,7 +32,7 @@ function areaServicio(tipoServicio){
             <div class="img_card"></div>
             <div class="descript">
                 <h2 class="title_card">${tipoServicio[i].title_servicio}</h2>
-                <a href="http://localhost/servicios/pages/servicios.php?id=${tipoServicio[i].id_servicio}" class="info_ser">mas info</a>  
+                <a href="http://localhost/servicios/pages/servicios.html?id=${tipoServicio[i].id_servicio}" class="info_ser">mas info</a>  
             </div>
          </div> `;     
     }   
