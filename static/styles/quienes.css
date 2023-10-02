@@ -71,8 +71,11 @@
     background-image: url("../img/pexels-pixabay-159397.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
+  
     background-size: cover;
     color: #e5e5e5;
+    background-clip: border-box;
 }
 .descrip2::after{
 
