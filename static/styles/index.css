@@ -28,7 +28,7 @@ body{
     justify-content: center;
     
   
-
+   
     background-image: url("../img/ahora.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,22 +78,31 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(50px);    
+    border: 1px red solidd;
+    transform: translateY(40px);    
 }
 
 .car_title{
 
-    font-family:'Times New Roman', Times, serif;
-    color: #ffffffe8;
-    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+    color: #ffffff;
+    font-size: 45px;
     margin-bottom: 20px;
     letter-spacing: 1px;
-
+    font-weight: 100;
     position:relative;
     width: 80%;
     text-align: center;
-
-  
+    text-wrap: balance;
 
 }
 

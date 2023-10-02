@@ -21,6 +21,17 @@
     
     margin: 30px;
     transform: translateY(-50px);
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
 }
 
 .title_ser{
@@ -32,6 +43,7 @@
 
 .descrip_ser{
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contenedor_menu{
 
