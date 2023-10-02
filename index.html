@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./static/styles/index.css" rel="stylesheet" type="text/css">
     <link href="./static/styles/modal.css" rel="stylesheet" type="text/css">
-    <link href="./static/styles/navbar_movil.css" rel="stylesheet" type="text/css">
+ 
     <link href="./static/styles/navegacion.css" rel="stylesheet" type="text/css">
     <link href="./static/styles/servicios.css" rel="stylesheet" type="text/css">
     <link href="./static/styles/quienes.css" rel="stylesheet" type="text/css">
@@ -130,7 +130,7 @@
       <div class="servicio ser2">
 
           
-      </div>
+      </div>  
 
 
       <div class="servicio ser3">
@@ -152,20 +152,24 @@
 <section  class="contactanos">
   
   <div class="foot_contact" id="contactos">
-    
+
+      <div class="contenedor_error">
+        <p class="error"></p>
+      </div>
+
+
       <form class="formulario_peticion">
 
         <h2 class="title_foot" >Envianos tu Peticion</h2>
      
 
        <div class="content_input">
-          <input type="text" placeholder="Nombre Completo" name="nombre" class="i1">
-          <input type="email" placeholder="email" name="email" class="i1">
-          <input type="text" placeholder="Numero Telefonico" name="telefono" class="i1">
+          <input type="text" placeholder="Nombre Completo" name="nombre" class="i1" required maxlength="252">
+          <input type="email" placeholder="email" name="email" class="i1" required maxlength="252">
+          <input type="text" placeholder="Numero Telefonico" name="telefono" class="i1" required minlength="8" maxlength="20">
        </div>
 
-        <textarea placeholder="peticion" name="peticion" class="t1">
-        </textarea>
+        <textarea placeholder="Enviar una peticion" name="peticion" class="t1" required maxlength="514"></textarea>
 
         <button class="btn_contact" type="submit">
           Enviar
@@ -177,15 +181,20 @@
         <ul>
           <li>Direccion: Salitrera Solferino # 1773</li>
           <li>Comuna: Copiapó</li>
-          <li>Mail: Transportessaavedranorte@gmail.com</li>
+          <li>Transportessaavedranorte@gmail.com</li>
           
         </ul>
         <ul>
-          <li>Fono: 985538019</li>
-          <li>texto de prueba</li>
-          <li>texto de prueba</li>
+          <div class="logo_foot"></div>
+          <li class="logo_text">Transportes Saavedra</li>
         </ul>
       
+        <ul>
+          <li>Fono: 985538019</li>
+          <li>instagram: de prueba</li>
+          <li>Facebook: de prueba</li>
+        </ul>
+       
 </footer>
 
     
@@ -196,7 +205,7 @@
 
 
   <script src="./static/js/barra.navegacion.js"></script>
-  <script src="./static/js/cambio_img.js"></script>
+
   <script src="./static/js/form.email.js" type="module" src="tu-archivo.js"></script>
  <script src="./static/js/servicios.js"></script>
   <script src="./static/js/select.service.js"></script>

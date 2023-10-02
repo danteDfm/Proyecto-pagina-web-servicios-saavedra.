@@ -13,7 +13,7 @@ export class Server{
     private constructor(){
 
         this.app = express();
-        this.PORT = process.env.PORT as number | undefined || 3001;
+        this.PORT = process.env.PORT as number | undefined || 3002;
         this.middlewares();
         this.routes();
         this.init();

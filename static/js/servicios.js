@@ -7,8 +7,9 @@ let container3 = document.querySelector(".ser3");
 
 async function obtenerServicio(){
   
-    const res=await fetch(`http://localhost:3001/api/v1/servicio/leer`, {method: "POST"}, headers = { 'Content-Type': 'application/json' });
+    const res=await fetch(`http://localhost:3002/api/v1/servicio/leer`, {method: "POST"}, headers = { 'Content-Type': 'application/json' });
     const data =  await res.json();
+    console.log("hola mundo");
     return data;
 }
 
@@ -32,7 +33,7 @@ function areaServicio(tipoServicio){
             <div class="img_card"></div>
             <div class="descript">
                 <h2 class="title_card">${tipoServicio[i].title_servicio}</h2>
-                <a href="http://localhost/servicios/pages/servicios.html?id=${tipoServicio[i].id_servicio}" class="info_ser">mas info</a>  
+                <a href="http://127.0.0.1:5502/pages/servicios.html?id=${tipoServicio[i].id_servicio}" class="info_ser">mas info</a>  
             </div>
          </div> `;     
     }   
@@ -44,7 +45,7 @@ function areaServicio(tipoServicio){
 function innerContainer(card, service){
 
     const ruta_img = './static/img/servicios';
-
+  
     for(let i = 0; i <card.length; i++){
 
         card[i].style.backgroundImage = `url(${ruta_img+service[i].img_servicio})`

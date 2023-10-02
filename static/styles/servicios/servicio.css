@@ -11,7 +11,7 @@ body{
    
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .content{
@@ -34,7 +34,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 45%;
-    height: 70%;
+    height: 60%;
   
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ body{
     background-position: center;
     position: relative;
     width: 550px;
-    height: 350px;
+    height: 400px;
     box-shadow: 1px 1px 5px #242424;
     z-index: 3;
     border-radius: 0px 10px 10px 0px;
@@ -78,11 +78,10 @@ body{
     padding: 20px;
     color: rgb(24, 24, 24);
     width: 100%;    
-   text-align: center;
-    letter-spacing: 1px;
-
-    
+    text-align: center;
+    letter-spacing: 1px;    
     height: 20%;
+    transform: translateY(25px);
  
 }
 
@@ -97,9 +96,8 @@ body{
     overflow: auto;
     justify-content: start;
     align-items: start;
-  
+
     color: rgb(39, 39, 39);
-   
     font-family: Arial, Helvetica, sans-serif;
  
    padding: 15px;
@@ -156,16 +154,20 @@ body{
         
     }
     .img_ser{
+
         width: 100%;
         border-radius: 0px;
         height: 40%;
         box-shadow: 0px 0px 0px black;
+        background-size: cover;
+        background-position: top;
     }
     
     .titulo_servicio{
 
         font-size: 20px;
         padding: 20px;
+        transform: translateY(0px);
     
     }
 
@@ -214,7 +216,7 @@ body{
         padding: 30px;
         box-shadow: 0px 0px 0px black;
         border: 1px black solid;
-       
+     
     }
     .img_ser{
         width: 100%;
@@ -233,11 +235,11 @@ body{
 
         border: 1px rgb(0, 0, 0) solid;
         width: 80%;
-        height: 350px;
+        height: 310px;
         margin: 0%;
         justify-content: start;
         align-items: start;
-  
+       
         
       
     
@@ -513,34 +515,6 @@ background-color: #066ba2;
 }
 
 
-.pie_pagina{
-    z-index: 10;
-    height: 15%;
-    background-color: #0c1a22;
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    color: white;
-}
-
-
-.pie_pagina ul{
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    list-style: none;
-}
-
-
-
-
-
 .contacts{
 
     position: fixed;
@@ -603,3 +577,4 @@ background-color: #066ba2;
     box-shadow: 5px 5px 30px #24242473;
 
 }
+

@@ -26,9 +26,10 @@ export function nodemailerConfig(cuerpo:Cuerpo){
             if(err){
 
                 console.log(err);
+                throw new Error("Error en node mailer");
             }
 
-            console.log(info);
+            return;
         });
 }
 

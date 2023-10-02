@@ -6,7 +6,7 @@
     display: flex;
     align-items: center; 
     justify-content: center;
-    background-image: url("../img/pexels-pixabay-159397.jpg");
+    background-image: url("../img/pexels-trinh-trần-11645003.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(44, 44, 44, 0.26);
+    background-color: rgba(44, 44, 44, 0.521);
 
 
 }
@@ -32,8 +32,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:center;
     align-items: center;
+    
    
 }
 
@@ -45,17 +46,18 @@
     color: #ffffff;
     padding: 20px;
     border-radius:5px;
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-       
+   background-color: rgba(20, 46, 61, 0.76);
     align-items: center;
+    justify-content: center;
     margin-bottom: 50px;
   
     z-index: 10;
     
-   
+ 
 }
 
 
@@ -76,7 +78,7 @@
 
     width: 100%;
     height: 50px;
-    margin: 2px;
+    margin-bottom:1px;
    
   
    
@@ -86,7 +88,9 @@
 
     width: 100%;
     height: 40%;
-   
+   resize: none;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -94,18 +98,18 @@
 .title_foot{
 
     color: rgb(255, 255, 255);
-    margin-top: 10px;
+  
     font-size: 30px;
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-   
+   margin-bottom: 10px;
 }
 
 .btn_contact{
     width: 100%;
     height: 40px;
-    padding: 0%;
+    padding-top: 1px;
     margin: 0%;
     border: none;
     transition: 1s;
@@ -162,9 +166,9 @@
   
        
         width: 270px;
-        height: 350px;
+        height: 300px;
         padding: 10px;
-        
+        transform: translateY(-50px);
        
     }
 
@@ -180,7 +184,7 @@
     .formulario_peticion .content_input input{
 
         width: 100%;
-        height: 50px;
+        height: 30px;
         margin: 1px;
        
         
@@ -189,7 +193,7 @@
 
 
         width: 100%;
-        height: 50%;
+        height: 40%;
         
     
     }
@@ -221,13 +225,16 @@
 
 .pie_pagina{
     z-index: 10;
-    height: 15%;
+    min-height: 15%;
+    height: auto;
     background-color: #0c1a22;
     width: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
     color: white;
+    position: absolute;
+    bottom: 0%;
 }
 
 
@@ -235,10 +242,110 @@
 
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     list-style: none;
+   
+
+}
+.pie_pagina ul li{
+
+    width:  340px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px white solid;
+}
+
+.logo_foot{
+    background-image: url("../img/logos-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 60px;
+}
+
+.logo_text{
+    text-align: center;
+}
+
+@media(max-width:830px){
+
+    .pie_pagina{
+        
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    
+    .pie_pagina ul{
+
+        width: 100%;
+        height: 33.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+       
+       
+    }
+    .pie_pagina ul li{
+
+        font-size: 13px;
+        padding: 5px;
+        text-align: start;
+        margin-top: 2px;
+    }
+    .logo_foot{
+        display: none;
+    }
+    .logo_text{
+        border-bottom: 1px white solid;
+    }
+    
+}   
+
+
+.contenedor_error{
+
+    color: #ffffff;
+    width: 300px;
+    height: 80px;
+    margin: 10px;
+    position: absolute;
+    z-index: 20;
+    top: 74%;
+    box-shadow: 10px 10px 30px #242424b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+@media(max-width: 750px){
+
+    .contenedor_error{
+
+        width: 250px;
+        height: 50px;
+   
+ 
+    }
+    
+}
+@media(max-width: 750px){
+
+    .contenedor_error{
+
+        width: 180px;
+        height: 40px;
+     
+ 
+    }
+    
 }

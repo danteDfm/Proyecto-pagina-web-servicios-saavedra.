@@ -179,7 +179,7 @@ background-color: #066ba2;
 
     .logo p{
         transform: translateX(0px);
-        border: 1px red solid;
+       
         width: 100%;
         background-color: #242424;
         
@@ -202,7 +202,7 @@ background-color: #066ba2;
        
         width:100%;
         height: 30%;
-        border: 1px red solid;
+       
     }
 
 

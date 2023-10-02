@@ -7,8 +7,8 @@ let img = document.querySelector(".img_ser");
 
 async function resService(){
 
-    const resService = await fetch(`http://localhost:3001/api/v1/servicio/leer/id/${id}`, {method: "POST"});
-    const dataService =await resService.json();
+    const resService = await fetch(`http://localhost:3002/api/v1/servicio/leer/id/${id}`, {method: "POST"});
+    const dataService = await resService.json();
     return dataService;
 }
 
