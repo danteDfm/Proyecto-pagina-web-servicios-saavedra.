@@ -7,7 +7,7 @@ let container3 = document.querySelector(".ser3");
 
 async function obtenerServicio(){
   
-    const res=await fetch(`http://localhost:3002/api/v1/servicio/leer`, {method: "POST"}, headers = { 'Content-Type': 'application/json' });
+    const res=await fetch(`http://localhost:3002/api/v1/servicio/leer`, {method: "GET"}, headers = { 'Content-Type': 'application/json' });
     const data =  await res.json();
     console.log("hola mundo");
     return data;
@@ -49,6 +49,7 @@ function innerContainer(card, service){
     for(let i = 0; i <card.length; i++){
 
         card[i].style.backgroundImage = `url(${ruta_img+service[i].img_servicio})`
+    
     };
 }
 

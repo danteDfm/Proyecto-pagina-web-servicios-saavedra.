@@ -1,8 +1,7 @@
 import mysql from "mysql2/promise"
 import { Servicios} from "../models/interfaces/servicio.interface";
+import  {Moment} from "moment";
 export class mysqlConnection{
-
-
 
    async connection() {
 
@@ -12,9 +11,11 @@ export class mysqlConnection{
             host: "localhost", 
             database: "PAGINA_WEB_SERVICIOS", 
             user: "root", 
-            password: ""
+            password: "",
+            timezone: 'UTC'
         });
 
+        console.log("Conexion a base de datos realizada");
         return objConnect;
        }catch(err:any){
 
@@ -24,7 +25,7 @@ export class mysqlConnection{
     }
     
 
-    async prepareQuery(consulta:string, prepare?: (string | Date | number)[]){
+    async prepareQuery(consulta:string, prepare?: (string | Moment | number)[]){
 
        try{
 

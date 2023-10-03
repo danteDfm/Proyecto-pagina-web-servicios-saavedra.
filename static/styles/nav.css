@@ -148,17 +148,17 @@ background-color: #066ba2;
 
 
 
-@media(max-width:850px){
+@media(max-width:860px){
 
     
     .navbar{
 
         
         flex-direction: column;
-        margin-top: 0px;
+        margin-top: 0%;
     
     }
-
+  
     .navbar_navigation{
 
 

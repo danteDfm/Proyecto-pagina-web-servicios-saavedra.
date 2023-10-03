@@ -30,7 +30,7 @@ form.addEventListener("submit", (e)=>{
 
 
       mensaje("correo enviado", "#1e4ff0");
-    fetch("http://localhost:3000/api/v1/enviar/email",{
+    fetch("http://localhost:3002/api/v1/email/enviar",{
 
         method: "POST", 
         headers: {

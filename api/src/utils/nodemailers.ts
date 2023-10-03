@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import { Cuerpo } from "../models/interfaces/mail.interface";
 
-export function nodemailerConfig(cuerpo:Cuerpo){
+export function nodeMailerConfig(nombre:string, email:string, numero:string, peticion:string){
 
         const transport = nodemailer.createTransport({
             service: "Gmail", 
@@ -17,7 +17,7 @@ export function nodemailerConfig(cuerpo:Cuerpo){
             from: "dante.kiki569@gmail.com", 
             to: "dante.kiki569@gmail.com", 
             subject: "Solicitud de trabajo", 
-            text: `Nombre: ${cuerpo.nombre} \n  email: ${cuerpo.email} \n numero: ${cuerpo.numero} \n solicitud: ${cuerpo.peticion}`
+            text: `Nombre: ${nombre} \n  email: ${email} \n numero: ${numero} \n solicitud: ${peticion}`
 
         }
 
@@ -33,4 +33,3 @@ export function nodemailerConfig(cuerpo:Cuerpo){
         });
 }
 
-module.exports = nodemailerConfig;

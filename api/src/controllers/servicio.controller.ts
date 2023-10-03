@@ -1,5 +1,7 @@
 import { Request, Response } from "express";
 import { Services } from "../models/servicios.model";
+import moment, {Moment} from "moment";
+
 
 
 export class ServicioController{
@@ -11,6 +13,8 @@ export class ServicioController{
          
             const objService = new Services();
             const dataService = await objService.readService();
+
+            
             res.status(201).json({
 
                 ok:true, 
@@ -46,10 +50,10 @@ export class ServicioController{
     static async crearServicio(req:any, res:Response){
         try{
 
-            const {titleService, desService, area,creacion} = req.body;
+            const { nombre, des, opc,creacion} = req.body;
             const imagen = req.filenameExtension;
 
-            const objService = new Services(titleService, desService, imagen, area,creacion);
+            const objService = new Services(nombre, des, imagen, opc,creacion);
 
             await objService.insertService();
 
@@ -71,6 +75,32 @@ export class ServicioController{
         }
 
     }
+    static async updateService(req:any | Request, res:Response){
 
+      try{
+        const { nombre, des, opc} = req.body;
+        const {id} = req.params;
+        const imagen = req.filenameExtension;
+      
+            
+
+        const objService = new Services(nombre, des, imagen, opc, moment().format().toString());
+        const response = await objService.updateService(id);
+     
+        res.status(200).json({
+            ok:true, 
+            msj: "Servicio Actulizado"
+        });
+      }catch(err){
+
+        console.log(err);
+        res.status(400).json({
+            ok:false, 
+            msj: "Error del Servidor"
+        });
+
+      }
+
+    }
 
 } 

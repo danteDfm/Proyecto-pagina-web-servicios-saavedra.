@@ -21,33 +21,62 @@
 </header>
 
     <main class="main">
+
+
+
+    
           <section class="servicio">
-              
-              <form class="form_service" enctype="multipart/form-data">
-                  <h1>Ingresar Informacion Del Servicio</h1>
-                <div> 
+      
+      
+       
+            <form class="form_service" enctype="multipart/form-data">
+              <p class="cerrar">Cerrar Formulario</p>
+              <h1>Ingresar Informacion Del Servicio</h1>
+            <div> 
+  
+              <label id="nombre">Nombre Servicio</label>
+              <input type="text" name="nombre" class="name" maxlength="56" required>
+            
+              <label id="opc">Descripcion</label>
+              <textarea class="descript" maxlength="1133" required name="des"></textarea>
+  
+                <label id="opc">Area Servicio</label>
+                <select id="opciones" class="opc" name="opc">
+                  <option value="general">General</option>
+                  <option value="transporte">Transporte</option>
+                  <option value="obrasMenores">Obras menores</option>
+               </select>
+  
+                <label id="img">Imagen Servicio</label>
+                <input type="file" name="img" class="img" accept="image/png">
+             
+  
+                <input type="text" style="display: none;" class="id_servicio">
+              <button type="submit">Actualizar</button>
+            </div>
+          </form>
 
-                  <label id="nombre">Nombre Servicio</label>
-                  <input type="text" name="nombre" class="name">
-                
-                  <label id="opc">Descripcion</label>
-                  <textarea class="descript"></textarea>
+
+          <div class="tabla_cont">
+
+            <h1 class="title_table">Tabla de contenido</h1>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>titulo</th>
+                    <th>creacion</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+            </section>
 
 
-                    <label id="opc">Area Servicio</label>
-                    <select id="opciones" class="opc">
-                      <option value="general">General</option>
-                      <option value="transporte">Transporte</option>
-                      <option value="obrasMenores">Obras menores</option>
-                  </select>
+        
 
-                    <label id="img">Imagen Servicio</label>
-                    <input type="file" name="img" class="img" accept="image/png">
-
-                  <button>Guardar</button>
-                </div>
-              </form>
-          </section>
 
           <section class="usuarios">
           <form class="form_service">

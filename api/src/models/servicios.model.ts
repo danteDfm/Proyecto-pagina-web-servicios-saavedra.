@@ -1,5 +1,5 @@
 import { mysqlConnection } from "../databases/database.connect";
-
+import  {Moment} from "moment";
 
 
 export class Services{
@@ -10,11 +10,11 @@ export class Services{
     private desService?:string;
     private imgService?:string;
     private area?:string;
-    private times?:Date ;
+    private times?:string;
 
     private objDatabase;
 
-    constructor( titleService?:string, desService?:string, imgService?:string, area?:string,times?:Date, borrado?:boolean,) {
+    constructor( titleService?:string, desService?:string, imgService?:string, area?:string,times?:string, borrado?:boolean,) {
 
      
         this.borrado = borrado;
@@ -31,6 +31,8 @@ export class Services{
     async readService(){
 
        try{
+        
+
 
         const query:string = "SELECT id_servicio, title_servicio, descript_servicio ,img_servicio, creacion, area_servicio FROM REGISTRO_SERVICIO WHERE borrado = false";
         const res=await this.objDatabase.prepareQuery(query);
@@ -46,10 +48,30 @@ export class Services{
 
 
 
-    public updateService(){
+    public async updateService(id:number){
 
-        const query:string = "UPDATE REGISTRO_SERVICIO SET title_servicio = ?, descript_servicio = ?, img_Servicio = ?, creacion = ? WHERE id_servicio = ?";
-        this.objDatabase.prepareQuery(query);
+       try{
+
+          let query:string = "";
+          let res;
+          
+          if(this.imgService == undefined){
+
+            query = "UPDATE REGISTRO_SERVICIO SET title_servicio = ?, descript_servicio = ?,  area_servicio = ? ,creacion = ? WHERE id_servicio = ?";
+            res = await this.objDatabase.prepareQuery(query, [this.titleService!, this.desService!, this.area!, this.times!, id]);
+            console.log("si actualiza");
+          }else{
+
+            query = "UPDATE REGISTRO_SERVICIO SET title_servicio = ?, descript_servicio = ?, img_Servicio = ?, area_servicio = ? ,creacion = ? WHERE id_servicio = ?";
+            res = await this.objDatabase.prepareQuery(query, [this.titleService!, this.desService!, this.imgService!, this.area!, this.times!, id]);
+          }
+          
+       
+          return res;    
+                
+       }catch(err:any){
+        throw new Error(err);
+       }
 
     }
 

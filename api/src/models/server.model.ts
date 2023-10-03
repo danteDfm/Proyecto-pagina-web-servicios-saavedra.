@@ -3,6 +3,8 @@ import cors from 'cors';
 import morgan from 'morgan';
 import 'dotenv/config';
 import { apiRouter } from '../routes';
+import { mysqlConnection } from '../databases/database.connect';
+
 
 export class Server{
 
@@ -16,9 +18,15 @@ export class Server{
         this.PORT = process.env.PORT as number | undefined || 3002;
         this.middlewares();
         this.routes();
+        this.connectSql();
         this.init();
     }
 
+public async connectSql(){
+
+        const objConnect =  new mysqlConnection;
+        await  objConnect.connection();
+}
     public static constructSingleton(){
 
         if(!Server.Singleton)  Server.Singleton = new Server;
