@@ -1,32 +1,30 @@
-.ante{
-    position: absolute;
-    width: 100%;
-    height: 14px;
-    font-size: 10px;
-    background-color: #242424;
-    color: aliceblue;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    top: 0px;
 
-}
 .navbar{
 
-    box-shadow: 1px 1px 1px #242424b1;
+   
     position:fixed;
     z-index: 100;
     width: 100vw;
-    height: 60px;
+    height: 74px;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    margin-top: 14px;
-    transition: 1s;
-    color: #ffffff;
+    justify-content:center;
+    color:#0b2f42;
+    transform: translateY(53px);
+    background-color: #ffffff;
 
-   
 
+}
+.ss{
+    background-color: #ffffff;
+    border-bottom: 1px rgba(0, 0, 0, 0.137) solid;
+    height: 53px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    font-size: 14px;
+    position: absolute;
 }
 .navbar_navigation{
 
@@ -34,9 +32,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     list-style: none;
-    width: 35rem;
+    width: 30%;
     height: 100%;
     position: relative;
    
@@ -53,8 +51,9 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   color: rgb(255, 255, 255);
+   color:#0b2f42;
    transition: 1s;
+    
 
   
 }
@@ -64,30 +63,30 @@
 .nabvar_link{
 
     text-decoration: dashed;
-   color:rgb(255, 255, 255);
+    color:#0b2f42;
   
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-   
+ 
     
 }
 .nabvar_link:hover{
 
-background-color: #066ba2;
+    color: #149ee9;
 }
 
 .nav_i{
 
-    
+    font-family: 'Times New Roman', Times, serif;
     width: auto;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 19px;
     border: 1px rgba(255, 0, 0, 0) solid;
 }
 .icon_nav{   
@@ -106,34 +105,48 @@ background-color: #066ba2;
 
 .logo{
     position: relative;
-    width: 350px;
+    width: 30%;
     height: 100%;
     display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
     
 }
 
+.llogo{
+
+     
+    width: 120px;
+    height: 50px;
+    background-image: url("../img/LOGO.png");
+    background-size: cover;
+  
+}
 .logo p{
 
     position: relative;
-    width: 75%;
+    width: 70%;
     height: 100%;
- 
+        
+    color:#000000;
     display: flex;
-    font-size: 15px;
+    font-size: 26px;
     display: flex;
-    justify-content: center;
+    justify-content:start;
+    margin-left: 10px;
     align-items: center;
     font-family:'Times New Roman', Times, serif;
-    transform: translateX(-25px);
-    
+  
+  
 }
 .navbar_title{
 
    
-
+   
     width: 25%;
     height: 100%;
-   background-image: url("../img/logos-removebg-preview.png");
+   background-image: url("../img/logos.png");
     background-repeat: no-repeat;
    background-position: center;
    background-size:contain;
@@ -148,6 +161,7 @@ background-color: #066ba2;
 
 
 
+
 @media(max-width:860px){
 
     
@@ -155,7 +169,7 @@ background-color: #066ba2;
 
         
         flex-direction: column;
-        margin-top: 0%;
+     
     
     }
   

@@ -1,0 +1,88 @@
+body{
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    height: 100vh;    
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.login{
+
+    position: relative;
+   
+    width: 50%;
+    height: 600px;
+    
+    background: #10638a;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+
+        display: flex;
+        flex-direction: row;
+
+    
+}
+.login .img_login{
+
+    background-image: url("../img//pexels-trinh-trần-11645003.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+ 
+}
+.login .input_login{
+
+    width: 50%;
+    height: 100%;
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.login .input_login h1{
+
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.content_int{
+
+    width: 100%;
+    height: 40%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content_int input{
+
+    width: 70%;
+    height: 32px;
+    margin: 2px;
+  
+}
+.content_int button{
+
+    width: 72%;
+    height: 35px;
+    margin: 2px;
+}
+.content_int button:hover{
+
+    color: white;
+    background-color: #242424;
+    cursor: pointer;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/styles/ingreso_servicio.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="cont_general">
+          
+
+
+  <div class="content_main">
+  <header class="header">
+
+                  
+
+
+</header>
+
+    <main class="main">
+        <section class="usuarios">
+           
+            <form class="form_usuario">
+                    <p class="bt12">cerrar Formulario</p>
+                    <h1>Ingresar Datos</h1>
+                  <div>
+                    <input type="text" placeholder="nombre y apellido" class="int1" required maxlength="45">
+                    <input type="text" placeholder="usuario" class="int1" required maxlength="30" minlength="4">
+                    <input type="password" placeholder="contraseña" class="int1" required minlength="8">
+                    <input type="text" placeholder="cargo" class="int1" required maxlength="30">
+                    <input type="text" class="int1"disabled style="display: none;">
+                    <button type="submit" class=" btt1">Guardar</button>
+                  </div>
+                </form>
+
+
+                <div class="contenedor_usuario">
+
+                  <div class="cont_btn12">
+                    <button>Ingresar Usuario</button>
+                  </div>
+
+                  <table class="tabla_user">
+                    <thead>
+                      <tr>
+                        <th>Nombe Completo</th>
+                        <th>Usuario</th>
+                        <th>Cargo</th>
+                        <th>Fecha Creacion</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+            </section>
+
+        
+      </main>
+
+
+   
+  </div>  
+
+        <aside class="side">
+
+      <div class="perfil">
+          <p>perfil</p>
+      </div>
+      <div class="nav_side">
+        
+              <ul>
+                  <li class="btn_nav"><a href="http://127.0.0.1:5502/pages/ingreso.servicio.html?">Servicio</a></li>
+                  <li class="btn_nav"><a>Usuarios</a></li>
+                  <li>Salir</li>
+              </ul>
+
+      </div>
+      </aside>
+
+
+    </div>
+ 
+    <script src="../static/js/usuario.dbs.js"></script>
+</body>
+</html>

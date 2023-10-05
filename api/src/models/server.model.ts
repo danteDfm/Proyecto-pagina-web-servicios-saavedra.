@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import 'dotenv/config';
 import { apiRouter } from '../routes';
 import { mysqlConnection } from '../databases/database.connect';
-
+import cookieParser from 'cookie-parser';
 
 export class Server{
 
@@ -35,8 +35,13 @@ public async connectSql(){
 
     public middlewares(){
 
-        this.app.use(cors());
+        this.app.use(cors({
+            exposedHeaders: ['Authorization'],
+            methods: "POST, GET, DELETE, PUT, PATHC"
+          }));  
+         
         this.app.use(morgan('dev'));    
+        this.app.use(cookieParser());    
         this.app.use(express.json());
         this.app.use(express.urlencoded({extended:false}));
 

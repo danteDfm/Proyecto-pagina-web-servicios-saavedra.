@@ -16,7 +16,7 @@ function actualizarServicio(){
   
   form.addEventListener("submit", (e)=>{
 
-    e.preventDefault();
+
     const formData = new FormData(form);
 
     formData.append("creacion", Date.now());
@@ -68,8 +68,9 @@ function desplegarLista(){
 
         res.data.map(data=>{
          
-          list+= `<tr class= 'trd'>
+          list+= `<tr class='trd'>
 
+              
               <th class="id_servicio" style="display:none">${data.id_servicio}</th>
               <th>${data.title_servicio}</th>
               <th>${data.creacion}</th>

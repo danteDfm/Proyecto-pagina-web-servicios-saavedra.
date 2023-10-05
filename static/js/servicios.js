@@ -67,7 +67,7 @@ async function servicio(){
     container2.innerHTML = areaServicio(transporte);
     container3.innerHTML = areaServicio(obras);
 
-  
+    
     const card1 = document.querySelectorAll(".card1");
     const card2 = document.querySelectorAll(".card2");
     const card3 = document.querySelectorAll(".card3");

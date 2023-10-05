@@ -38,6 +38,13 @@
     min-height: 33.33%;
     height: auto;
     position: relative;
+        color: aliceblue;
+        
+    background-image: url("../img/pexels-pixabay-159397.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     
 }
 
@@ -46,7 +53,7 @@
 
     padding: 9px;
     margin: 5px;
- 
+    z-index: 1;
 
     font-size: 27px;
     
@@ -54,8 +61,9 @@
 .descrip{
     padding: 10px;
     margin: 5px;
+    
     font-size: 18px;
-  
+  z-index: 1;
 }
 
 
@@ -68,16 +76,10 @@
     align-items: center;
     height: 33.33%;
  
-    background-image: url("../img/pexels-pixabay-159397.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-  
-    background-size: cover;
-    color: #e5e5e5;
-    background-clip: border-box;
+    color: #000000;
+   
 }
-.descrip2::after{
+.descrip1::after, .descrip3::after{
 
     content: "";
     position: absolute;
@@ -92,13 +94,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    color: aliceblue;
     height: 33.33%;
   align-items: center;
    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  
+  background-image: url("../img/pexels-trinh-trần-11645003.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
