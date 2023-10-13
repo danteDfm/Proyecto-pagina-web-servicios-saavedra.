@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/styles/ingreso_servicio.css" rel="stylesheet" type="text/css">
+    <link href="../static/styles/asideService.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
 
-    <div class="cont_general">
-          
+  <div class="content_div">
+    
 
 
-  <div class="content_main">
-  <header class="header">
+  
+    
+    <header class="header">
 
-                  
+      <div class="le">Bienvenidos a Hermes.</div>
+    </header>
 
-
-</header>
-
-    <main class="main">
-        <section class="usuarios">
+ 
            
             <form class="form_usuario">
                     <p class="bt12">cerrar Formulario</p>
@@ -40,50 +39,65 @@
                 <div class="contenedor_usuario">
 
                   <div class="cont_btn12">
+
                     <button>Ingresar Usuario</button>
+              
+
                   </div>
 
                   <table class="tabla_user">
                     <thead>
                       <tr>
-                        <th>Nombe Completo</th>
-                        <th>Usuario</th>
-                        <th>Cargo</th>
-                        <th>Fecha Creacion</th>
+                        <td>Nombe Completo</td>
+                        <td>Usuario</td>
+                        <td>Cargo</td>
+                        <td>Fecha Creacion</td>
+                        <td>Actualizar</td>
+                        <td>Borrar</td>
                       </tr>
                     </thead>
                     <tbody>
                     </tbody>
                   </table>
+
+
                 </div>
-            </section>
-
         
-      </main>
-
 
    
-  </div>  
 
-        <aside class="side">
+
+    </div>  
+
+    <aside class="side">
 
       <div class="perfil">
-          <p>perfil</p>
+          <div class="logo"></div>
+          <div class="logoInfo">
+
+            <p class="dataPerfil"></p>
+            <p class="dataPerfil"></p>
+
+          </div>
       </div>
       <div class="nav_side">
-        
-              <ul>
-                  <li class="btn_nav"><a href="http://127.0.0.1:5502/pages/ingreso.servicio.html?">Servicio</a></li>
-                  <li class="btn_nav"><a>Usuarios</a></li>
-                  <li>Salir</li>
-              </ul>
-
-      </div>
-      </aside>
-
+        <div class="con_btn">
+        <li class="btn_nav"><a href="http://127.0.0.1:5502/pages/ingreso.servicio.html?">Servicio</a></li>
+        <li class="btn_nav" ><a class="bb2">Usuarios</a></li>
+        </div>
+        <li class="salir">Salir</li>
+  
 
     </div>
- 
+  </aside>
+
+
+
+
+
+
+  
     <script src="../static/js/usuario.dbs.js"></script>
+    <script src="../static/js/perfil.js"></script>
 </body>
 </html>

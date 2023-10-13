@@ -1,9 +1,20 @@
 let tablaUser = document.querySelector(".tabla_user tbody");
+let tablaDelete = document.querySelector(".tabla_delete tbody");
+
 let form2 = document.querySelector(".form_usuario");
 let valores = document.querySelectorAll(".int1");
-let usuario = document.querySelectorAll(".usuarios");
-let servicio = document.querySelectorAll(".servicio");
 let close = document.querySelector(".bt12");
+let l2 =  document.querySelector(".bb2");
+
+let ruta = window.location.href.split("?").shift();
+
+(function(){
+
+    if(ruta == "http://127.0.0.1:5502/pages/ingreso.usuario.html"){
+    l2.style.color = "red";
+  }
+
+})()
 
 
 
@@ -40,17 +51,18 @@ async function fetchUsuario(){
         let dataUser = await resData.json();
 
         dataUser.msj.map(data=>{
-
+            
             template+= `<tr>
-                <td style='display:none' class="idUser ts">${data.id_usuario}</td>
-                <td>${data.nombre_apellido}</td>
-                <td>${data.nombre_usuario}</td>
-                <td>${data.cargo_usuario}</td>
-                <td>${data.creacion_usuario}</td>
-                <td class='btn_actualizar'>Actualizar</td>
-                <td class='btn_borrar'>Borrar</td>
-                
-            </tr>`;
+
+                            <td style='display:none' class="idUser ts">${data.id_usuario}</td>
+                            <td>${data.nombre_apellido}</td>
+                            <td>${data.nombre_usuario}</td>
+                            <td>${data.cargo_usuario}</td>
+                            <td>${data.creacion_usuario.split(".").shift()}</td>
+                            <td class='btn_actualizar'>Actualizar</td>
+                            <td class='btn_borrar'>Borrar</td>
+                    
+                        </tr>`;
 
 
 
@@ -115,7 +127,7 @@ async function fetchUsuario(){
             borrar[i].style.cursor = "pointer";
             borrar[i].style.color = "red";
             borrar[i].addEventListener("click", (e)=>{
-        
+                console.log(idUser[i].textContent);
                     fetch(`http://localhost:3002/api/v1/usuario/delete/${idUser[i].textContent}`, {method:"delete"})
                     .then((res)=>res.json())
                     .then(res=> console.log(res))

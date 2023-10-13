@@ -44,6 +44,14 @@ form.addEventListener("submit", (e)=>{
 
       console.log(res);
 
+    })
+    .finally(()=>{
+
+      inputAll[0].value = "";
+      inputAll[1].value = "";
+      inputAll[2].value = "";
+      txt.value = "";
+
     }).catch(err=>console.log(err));
 
   }catch(err){

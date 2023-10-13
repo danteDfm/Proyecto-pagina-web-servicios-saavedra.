@@ -19,6 +19,7 @@ export class UsuarioController {
       });
     }
   }
+
   public static async leerUsuarioId(req: Request, res: Response) {
     try {
       const { idUsuario } = req.params;

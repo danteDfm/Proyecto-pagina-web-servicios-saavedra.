@@ -39,7 +39,7 @@ export class Services{
         return res;
         
        }catch(err:any){
-
+        
             throw new Error(err);
        }
     }
@@ -95,12 +95,12 @@ export class Services{
 
       try{
 
-        const query:string = "Select title_servicio, descript_servicio, img_servicio, creacion from REGISTRO_SERVICIO WHERE id_servicio = ?";
+        const query:string = "Select title_servicio, descript_servicio, img_servicio, creacion FROM registro_servicio WHERE id_servicio = ?";
         const res = await this.objDatabase.prepareQuery(query, [id]);
         return res;
 
       }catch(err:any){
-
+        console.log(err);
         throw new Error(err);
       }
 

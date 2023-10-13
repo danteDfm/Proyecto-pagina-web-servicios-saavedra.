@@ -26,25 +26,28 @@
     font-size: 14px;
     position: absolute;
 }
+.pp{
+    display: none;
+}
 .navbar_navigation{
 
   
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: start;
+    justify-content: start;
+    align-items:center;
     list-style: none;
-    width: 30%;
+    width: 50%;
     height: 100%;
     position: relative;
    
-    
+   
 }
 
 .navbar_navigation li{
-
+   
    text-align: center;
-   width: 25%;
+   width: 100px;
    height: 100%;
    text-decoration: dashed;
    display: flex;
@@ -53,10 +56,11 @@
    justify-content: center;
    color:#0b2f42;
    transition: 1s;
-    
+   
 
-  
+
 }
+
 
 
 
@@ -64,13 +68,13 @@
 
     text-decoration: dashed;
     color:#0b2f42;
-  
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
- 
+    
     
 }
 .nabvar_link:hover{
@@ -80,43 +84,51 @@
 
 .nav_i{
 
-    font-family: 'Times New Roman', Times, serif;
+    
     width: auto;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
-    border: 1px rgba(255, 0, 0, 0) solid;
+    font-size: 17px;
+  
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
 }
 .icon_nav{   
 
    
-    font-size: 26px;
+    font-size: 25px;
+    
+  
     width: auto;
-    height: 50%;
+   
     text-align: end;
     margin: 5px;
     line-height: 100vh; 
-    border: 1px rgba(255, 0, 0, 0) solid;
+ 
+   
 }
 
 
 
 .logo{
     position: relative;
-    width: 30%;
+    width: 50%;
     height: 100%;
     display: flex;
     padding: 10px;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     
 }
 
 .llogo{
 
-     
+        
     width: 120px;
     height: 50px;
     background-image: url("../img/LOGO.png");
@@ -126,17 +138,23 @@
 .logo p{
 
     position: relative;
-    width: 70%;
+    width: 45%;
     height: 100%;
-        
+   
     color:#000000;
     display: flex;
-    font-size: 26px;
+    font-size: 24px;
     display: flex;
     justify-content:start;
     margin-left: 10px;
     align-items: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
   
   
 }
@@ -161,116 +179,99 @@
 
 
 
-
-@media(max-width:860px){
-
-    
-    .navbar{
-
-        
-        flex-direction: column;
-     
-    
-    }
-  
-    .navbar_navigation{
-
-
-        width: 100%;
-        height: 70%;
-        position: relative;
-        
-        
-    }
-    .nav_i{
-
-    
-  
-        font-size: 14px;
-     
-    }
-    .icon_nav{   
-
-   
-        font-size: 20px;
-    
-        
-    }
+@media(max-width: 1000px){
     .logo{
+        
+        width: 40%;
+        padding: 5px;
+     
+    }
+
+    .llogo{
+
+        
+        width: 100px;
+        height: 50px;
+        
+      
+    }
+    .logo p{
+    
+
+        width: 45%;
+        height: 100%;
        
-        width:100%;
-        height: 30%;
+  
+        font-size: 17px;
+     
       
     }
 
-
-    .logo p{
-        transform: translateX(0px);
-       
-        width: 100%;
-        background-color: #242424;
-        
-    }
-    .navbar_title{
-
-   
-
-    
-        display: none;
-       
-    }
-    .ante{
-       
-        display: none;
-    }
-    
-}
-
-
-@media(max-width:482px){
-    .logo{
-       
-        width:100%;
-        height: 30%;
-       
-    }
-
-
-    .navbar{
-
-        width: 100vw;
-        position: fixed;
-    
-    }
-
-    .navbar_navigation{
-
-
-        width: 100%;
-        height: 70%;
-        position: relative;
-        
-        
-    }
-    .nabvar_link{
-        flex-direction: column;
-    }
     .nav_i{
 
-    
-  
-        font-size: 12px;
-     
+
+        font-size: 17px;
+       
     }
-    .icon_nav{   
+}
+
+@media(max-width: 600px){
+    .logo{
+        
+        width: 40%;
+        padding: 5px;
+     display: none;
+    }
+    .navbar_navigation{
+
+  
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+       
+       
+    }
+  
+    .pp{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tt{
+        display: none;
+    }
+    .navbar_navigation li{
+   
+   
+        width: 90px;
+        height: 100%;
+   
+     
+       
+     }
+     
+    
+
+}
+@media(max-width: 385px){
+    .nav_i{
+
+
+        font-size: 11px;
+        margin: 2px;
+        text-shadow: 0px 1px 1px #242424;
+       
+    }
+    .navbar_navigation li{
+   
+   
+        width: 60px;
+        height: 100%;
+   
+        
+       
+     }
 
    
-        font-size: 14px;
-        
-
-       
-        
-        
-    }
 
 }

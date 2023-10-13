@@ -21,7 +21,7 @@ export class Usuario{
 
         try{
 
-            const query = "SELECT id_usuario, nombre_apellido, nombre_usuario, contrasena_usuario, cargo_usuario, creacion_usuario FROM usuarios WHERE borrado_logico = false";
+            const query = "SELECT id_usuario, nombre_apellido, nombre_usuario, contrasena_usuario, cargo_usuario, creacion_usuario FROM usuarios WHERE borrado_logico  =  false";
             const resSql=await this.objConnect.prepareQuery(query);
             return resSql;
 
@@ -32,6 +32,7 @@ export class Usuario{
         }
 
     }
+
     public async leerUsuarioId(idUsuario:number){
 
         try{

@@ -1,7 +1,8 @@
 let data = document.querySelectorAll(".data");
 let msj = document.querySelector(".msj");
-console.log(window.innerWidth);
-console.log(window.scrollY);
+let cont = document.querySelector(".con_msj");
+
+
 function sendData(){
 
     document.querySelector(".btn_log").addEventListener("submit", (e)=>{
@@ -26,22 +27,45 @@ function sendData(){
         }).then(async(res)=>{
             
             const token = res.headers.get("Authorization");
-
             localStorage.setItem("userToken", token);
 
             if(res.ok) return res.json();
-            throw new Error("la Solcicitud ha fallado");
+            if(res.status == 404) throw({
+                msj: "Usuario no existe", 
+                code: 404
+            });
+            if(res.status == 401) throw({
+                msj: "Contraseña incorrecta", 
+                code: 401
+            });
+            return;            
         })
         .then(res =>{
 
-            console.log(res);   
-            
+           
+           window.location.href = "http://127.0.0.1:5502/pages/ingreso.servicio.html";
        
 
         })
         .catch(err=>{
-            msj.innerText = err;
-            msj.parentElement.style.background = "red";
+
+            
+            if(err.code == 404 || err.code == 401){
+
+            
+                cont.style.opacity= "1";
+                console.log(err);
+                msj.innerText = err.msj;
+                msj.parentElement.style.background = "red";
+                setTimeout(()=>{
+                    cont.style.opacity = "0";
+                }, 1000);
+
+            }
+
+            console.log(err);
+            return;
+          
         });
 
     

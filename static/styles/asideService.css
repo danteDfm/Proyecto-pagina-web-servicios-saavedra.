@@ -1,0 +1,190 @@
+
+body{
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows:   10% 90%;
+  
+   
+   
+}
+
+.content_div{
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-column-end: 3;
+   width: 100%;
+   height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}   
+
+.side{
+
+    background-color: #3985f8;
+  
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+    grid-row-start:1 ;
+    grid-row-end:3 ;
+
+
+}
+
+.perfil{
+    width: 100%;
+    height: 30%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo{
+    background-image: url("../img/iconos/user_1144709.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  
+    z-index: 6;
+}
+.logoInfo{  
+    
+    margin: 5%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.logoInfo p{
+    
+    margin: 0%;
+    text-align: center;
+}
+.nav_side{
+
+    width: 100%;
+    height: 80%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.con_btn{
+
+    height: 90%;
+}
+.nav_side li{
+
+    width: 100%;
+    height: 50px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+
+}
+.nav_side li a{
+
+    width: 100%;
+    height: 50px;
+    margin: 0%;
+    text-align:center ;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-decoration: dashed;
+    position: relative;
+    font-size: 20px;
+    
+}
+
+
+.nav_side li a::after{
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: 1s;
+}
+.nav_side li a:hover::after{
+
+  
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+
+.salir{
+
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: dashed;
+    font-size: 20px;
+    color: rgb(255, 103, 103);
+
+}
+.salir:hover{
+
+    
+    cursor: pointer;
+
+}
+
+.header{
+
+  
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 70px;
+    position: absolute; 
+    z-index: 10;
+ 
+   background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .ls{
+
+  background-image: url("../img/LOGO.png");
+  background-size: cover;
+  width: 100px;
+  height: 50px;
+
+}
+.header .le{
+
+    font-size: 20px;
+    
+
+}

@@ -4,108 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/styles/ingreso_servicio.css" rel="stylesheet" type="text/css">
+    <link href="../static/styles/asideService.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
 
-    <div class="cont_general">
-          
+  
+      <div class="content_div">
+        
 
-
-  <div class="content_main">
-  <header class="header">
-
-                  
-
-
-</header>
-
-    <main class="main">
+      <header class="header">
+    
+        <div class="le">Bienvenidos a Hermes.</div>
+      </header>
 
 
 
     
-          <section class="servicio">
-      
-      
-       
-            <form class="form_service" enctype="multipart/form-data">
-              <p class="cerrar">Cerrar Formulario</p>
-              <h1>Ingresar Informacion Del Servicio</h1>
-            <div> 
-  
-              <label id="nombre">Nombre Servicio</label>
-              <input type="text" name="nombre" class="name" maxlength="56" required>
+    
+     
+          <form class="form_service" enctype="multipart/form-data">
+            <p class="cerrar">Cerrar Formulario</p>
+            <h1>Ingresar Informacion Del Servicio</h1>
+          <div> 
+
+            <label id="nombre">Nombre Servicio</label>
+            <input type="text" name="nombre" class="name" maxlength="56" required>
             
-              <label id="opc">Descripcion</label>
-              <textarea class="descript" maxlength="1133" required name="des"></textarea>
-  
-                <label id="opc">Area Servicio</label>
-                <select id="opciones" class="opc" name="opc">
-                  <option value="general">General</option>
-                  <option value="transporte">Transporte</option>
-                  <option value="obrasMenores">Obras menores</option>
-               </select>
-  
-                <label id="img">Imagen Servicio</label>
-                <input type="file" name="img" class="img" accept="image/png">
-             
-  
-                <input type="text" style="display: none;" class="id_servicio">
-              <button type="submit">Actualizar</button>
-            </div>
-          </form>
+            <label id="opc">Area Servicio</label>
+            <select id="opciones" class="opc" name="opc">
+              <option value="general">General</option>
+              <option value="transporte">Transporte</option>
+              <option value="obrasMenores">Obras menores</option>
+           </select>
+
+            <label id="des">Descripcion</label>
+            <textarea class="descript" maxlength="508" required name="des"></textarea>
+
+           
+
+              <label id="img">Imagen Servicio</label>
+              <input type="file" name="img" class="img" accept="image/png/jpg">
+           
+
+              <input type="text" style="display: none;" class="id_servicio">
+            <button type="submit">Actualizar</button>
+          </div>
+        </form>
 
 
-          <div class="tabla_cont">
+        <div class="tabla_cont">
 
-            <h1 class="title_table">Tabla de contenido</h1>
-              <table class="table">
-             
-                <thead>
-                  <tr>
-                    <th>titulo</th>
-                    <th>creacion</th>
-                  </tr>
-                </thead>
-                <tbody>
+          <h1 class="title_table">Servicios</h1>
+            <table class="table">
+           
+              <thead>
+                <tr>
+                  <th>titulo</th>
+                  <th>Area</th>
+                  <th>creacion</th>
+                </tr>
+              </thead>
+              <tbody>
 
-                </tbody>
-              </table>
-            </div>
-            </section>
+              </tbody>
+            </table>
+          </div>
+         
 
-
-        
-        
-      </main>
+    
 
 
-   
-  </div>  
+ 
+      </div>        
+
 
         <aside class="side">
 
-      <div class="perfil">
-          <p>perfil</p>
-      </div>
-      <div class="nav_side">
-        
-           
-        <ul>
-          <li class="btn_nav"><a >Servicio</a></li>
-          <li class="btn_nav" ><a href="http://127.0.0.1:5502/pages/ingreso.usuario.html?">Usuarios</a></li>
-          <li>Salir</li>
-      </ul>
+            <div class="perfil">
+                <div class="logo"></div>
+                <div class="logoInfo">
 
-      </div>
+                  <p class="dataPerfil"></p>
+                  <p class="dataPerfil"></p>
+
+                </div>
+            </div>
+          <div class="nav_side">
+          
+              
+      
+          <div class="con_btn">
+            <li class="btn_nav"><a class="bb1">Servicio</a></li>
+            <li class="btn_nav" ><a  href="http://127.0.0.1:5502/pages/ingreso.usuario.html?">Usuarios</a></li>
+          </div>
+              <li class="salir">Salir</li>
+        
+
+        </div>
       </aside>
 
 
-    </div>
+
   
  
     <script src="../static/js/ingreso.js"></script>
+    <script src="../static/js/perfil.js"></script>
     
 
 

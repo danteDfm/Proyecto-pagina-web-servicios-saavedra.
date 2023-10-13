@@ -1,159 +1,47 @@
 
 body{
-
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    overflow: hidden;
-  
-
-    
-   
+    background-image: url("../img/pexels-los-muertos-crew-8853537.jpg");  
    
 }
 
-.cont_general{
-
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.content_main{
-
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 90%;
-    height: 100%;
-
-}
 
 
 
-.servicio{
-
-
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-   
-    justify-content: center;
-    align-items: center;
-
-    transform: translateX(80px);
-}
-
-.side{
-
-    background-color: rgba(17, 25, 40, 0.75);
-    position: relative;
-    height: 100%;
-    width: 10%;
-   
-    z-index: 10;
-    left: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-   
-}
-
-.perfil{
-    width: 100%;
-    height: 30%;
-}
-.nav_side{
-
-    width: 100%;
-    height: 70%;
-}
-
-
-
-.main{
-
+.tabla_cont{
  
-    position: relative;
-    grid-area: "main";
+    padding: 10px;
     width: 90%;
-    height: 100%;
-    display: block;
+    min-height: 540px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     
+    flex-direction: column;
+  
+    border-radius: 0px;
+
+    box-shadow: 5px 5px 10px #24242491;
+  
 }
 
-
-
-.header{
-
-    width: 100%;
-    height: 10%;
-    position: relative; 
-   z-index: 10;
-   backdrop-filter: blur(19px) saturate(180%);
-   -webkit-backdrop-filter: blur(19px) saturate(180%);
- 
-   border: 1px solid rgba(255, 255, 255, 0.125);
-   background-color: #242424;
-
-}
-
-
-.form_service{
-    
-
-        width: 40%;
-        height: 50%;
-        position: absolute;
-        flex-direction: column;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
-        background-color: #000000;
-        color: rgb(255, 255, 255);
-            display: none;
-}
 
 .table{
     z-index: 1;
-    width: 100%;
-    height: 230px;
+    width: 80%;
     padding: 1px;
-    box-shadow: 10px 10px 30px rgb(63, 63, 63), -10px -10px 30px aliceblue;
+    background-color: #ffffff;
+    padding: 30px;
+ 
 }
 .table th{
     width: auto;
-    height: 30px;
+    height: 25px;
     border: 1px rgb(0, 0, 0) solid;
     color: rgb(0, 0, 0);
 }
 .title_table{
-    font-size: 25;
+    font-size: 30;
     font-family: Arial, Helvetica, sans-serif;
-}
-.tabla_cont{
-
-    width: 70%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    flex-direction: column;
-   
-    
-  
 }
 
 
@@ -182,12 +70,37 @@ body{
 
 
 }
+
+.form_service{
+    
+
+    width: 40%;
+    height: 500px;
+    position: absolute;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+        display: none;
+        box-shadow: 5px 5px 10px #242424a9;
+}
 .form_service input{
 
     width: 90%;
     height: 30px;
+    
+    
+  
+}
+.form_service .opc{
+
+    width: 90%;
+    height: 35px;
  
- 
+    
       
 }
 .form_service h1{
@@ -203,8 +116,13 @@ body{
 .form_service label{
 
     width: 90%;
-    height: 20px;
+    height: 30px;
+  
+    display: flex;
+    justify-content: start;
+    align-items: center;
 
+    margin-top: 5px;
  
 }
 .form_service div{
@@ -222,9 +140,10 @@ body{
 .form_service textarea{
 
     width: 90%;
-    height: 50px;
+    height: 100px;
     margin: 10px;
-      
+    resize: none;
+    font-size: 17px;
 }
 .form_service button{
 
@@ -235,17 +154,7 @@ body{
 }
 
 
-.usuarios{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;   
-    width: 100%;
-    height: 100%;    
-    transform: translateX(80px);   
-   
-}
 
 .contenedor_usuario{
 
@@ -262,39 +171,40 @@ body{
 ;
     
 }
-.cont_btn12{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-10px);
 
-}
-.tabla_user{
+.tabla_user, .tabla_delete{
     
-    height: 40px;
-    max-height: 100px;
-    border: 1px rgb(0, 0, 0) solid;
+    min-height: 100px;
+    max-height: 150px;
     width: 80%;
-   
-   
-    
-    
+
+   border: 1px rgb(0, 0, 0) solid;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.tabla_user tr{
+.tabla_delete{
+    display: none;
+}
+.tabla_user tr, .tabla_delete tr{
     
     font-size: 19px;
-    text-align: center;
+    
     display: flex;
     
+  
 }
-.tabla_user td{
+.tabla_user td,  .tabla_delete td{
+
     border: 1px rgb(0, 0, 0) solid;
     position: relative;
-    width: 16.6%;
+    width: 16.9%;
     height: 30px;
     font-size: 16px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
 }
 .form_usuario{
@@ -306,18 +216,44 @@ body{
     flex-direction: column;
     position: absolute;
     align-items: center;
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     z-index: 10;
-    
+    border: 1px black solid;
     display: none;
- 
-}   
+    border: 1px re solid;
+    box-shadow: 5px 5px 10px #242424a9;
+}  
+.bt12{
+   
+    font-size: 16px;
+} 
 .bt12:hover{
     cursor: pointer;
     color: orangered;
+
 }
+
+.cont_btn12{
+
+    width: 100%;
+    height: 30px;
+   
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.cont_btn12 button{
+
+  width: 120px;
+  height: 100%;
+    
+}
+
 .cont_btn12 button:hover{
+    
     cursor: pointer;
     color: blue;
 }

@@ -52,7 +52,7 @@ export class ServicioController{
 
             const { nombre, des, opc,creacion} = req.body;
             const imagen = req.filenameExtension;
-
+            
             const objService = new Services(nombre, des, imagen, opc,creacion);
 
             await objService.insertService();
@@ -78,14 +78,18 @@ export class ServicioController{
     static async updateService(req:any | Request, res:Response){
 
       try{
+     
         const { nombre, des, opc} = req.body;
         const {id} = req.params;
-        const imagen = req.filenameExtension;
+        
       
-            
+        console.log("controller");
+        console.log(req.file);
+        console.log(req.body);
+               
 
-        const objService = new Services(nombre, des, imagen, opc, moment().format().toString());
-        const response = await objService.updateService(id);
+        const objService = new Services(nombre, des,req.custom, opc, moment().format().toString());
+        await objService.updateService(id);
      
         res.status(200).json({
             ok:true, 
