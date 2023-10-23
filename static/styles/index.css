@@ -55,7 +55,7 @@ body{
     background-image: url("../img/col5.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-   
+    background-attachment:initial;
    
     height: 100%;
     width: 100%;
@@ -67,7 +67,6 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-     
 }
 .descripcion::after{
 
@@ -75,7 +74,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.252);   
+    background-color: rgba(0, 0, 0, 0.263);   
 
     z-index: 1;
 }
